@@ -18,6 +18,7 @@
  - [npm-dedupe command documentation](https://docs.npmjs.com/cli/v6/commands/npm-dedupe)
  - [Removed ESLINt to get rid of package plugin conflict with eslint](https://stackoverflow.com/questions/70449712/create-react-app-error-in-plugin-react-was-conflicted-between-eslintrc-jso)
  - [Install Tailwind.css and Next.js](https://tailwindcss.com/docs/guides/nextjs)
+ - [Converting to react to next.js](https://stefaniq.com/migrating-your-react-app-to-next-js-a-comprehensive-guide/)
 ### Useful commands
  - local firebase server emulator
  ' firebase emulators:start '
