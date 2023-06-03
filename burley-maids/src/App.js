@@ -10,15 +10,16 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className="App-link text"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
          THIS WEBSITE IS BEING MAID FOR JOE LADAN. 
         </a>
-        <a
-          className="App-link"
+        <p className='text-3xl font-bold underline'>TAILWIND TEST</p>
+        <a 
+          className=""
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
