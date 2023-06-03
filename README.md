@@ -5,6 +5,7 @@
   - Firebase for web hosting
   - React.js
   - Tailwind.css
+  - Next.js for static serverside rendering and SEO
   - Find something to host form shit
  
  ## References
@@ -13,6 +14,10 @@
  - [Blank Firebase hosting Error fix](https://stackoverflow.com/questions/52177222/blank-page-after-successful-firebase-deployment)
  - [Install Tailwind.css into react ](https://tailwindcss.com/docs/guides/create-react-app)
  - [Next.js Basics](https://www.youtube.com/watch?v=__mSgDEOyv8)
+ - [Install packages after deleting node_modules folder](https://stackoverflow.com/questions/45476870/accidentally-deleted-node-modules-folder)
+ - [npm-dedupe command documentation](https://docs.npmjs.com/cli/v6/commands/npm-dedupe)
+ - [Removed ESLINt to get rid of package plugin conflict with eslint](https://stackoverflow.com/questions/70449712/create-react-app-error-in-plugin-react-was-conflicted-between-eslintrc-jso)
+ - [Install Tailwind.css and Next.js](https://tailwindcss.com/docs/guides/nextjs)
 ### Useful commands
  - local firebase server emulator
  ' firebase emulators:start '
