@@ -7,7 +7,38 @@
   - Tailwind.css
   - Next.js for static serverside rendering and SEO
   - Find something to host form shit
- 
+
+ ## TODO Before building any pages
+ - Convert into next.js app for SEO 
+ - Change meta tags
+ - Create tailwind.css template componenent for react and next.jss
+ - Design NAV bar
+ - design home page gallery
+ - Add defualt 404 page
+
+### Index Page
+ - Home page
+
+### Testomonials page
+ - something
+### Contact us page
+ - someting
+### Services Page
+ - something
+
+## Completed TODO
+ - Something
+
+### Index Page
+ - Home page
+
+### Testomonials page
+ - something
+### Contact us page
+ - someting
+### Services Page
+ - something
+
  ## References
  - [Deploy React into firebase](https://www.example.com)
  - [gitignore](https://www.toptal.com/developers/gitignore)
@@ -24,3 +55,4 @@
  ' firebase emulators:start '
  -  Deploys changes to firebase server
 ' firebase deploy '
+
