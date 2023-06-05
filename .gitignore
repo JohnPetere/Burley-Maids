@@ -1,21 +1,7 @@
 
 *.cache
+.firebase\burley-maids\
+.firebase/node_modules
+burley-maids/node_modules
 burley-maids/package-lock.json
 burley-maids/.next
-burley-maids/.next/build-manifest.json
-burley-maids/.next/cache/webpack/client-production/0.pack
-burley-maids/.next/cache/webpack/client-production/1.pack
-burley-maids/.next/cache/webpack/client-production/2.pack
-burley-maids/.next/cache/webpack/client-production/index.pack
-burley-maids/.next/cache/webpack/client-production/index.pack.old
-burley-maids/.next/cache/webpack/server-production/0.pack
-burley-maids/.next/cache/webpack/server-production/index.pack
-burley-maids/.next/server/middleware-build-manifest.js
-burley-maids/.next/server/middleware-react-loadable-manifest.js
-burley-maids/.next/server/next-font-manifest.js
-burley-maids/.next/server/pages-manifest.json
-burley-maids/.next/server/pages/_app.js
-burley-maids/.next/server/pages/_document.js
-burley-maids/.next/server/pages/_error.js
-burley-maids/.next/server/webpack-runtime.js
-burley-maids/.next/trace
