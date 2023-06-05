@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.22.1",
+    "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -16,7 +17,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cleanstall": "rm -r node_modules/ && npm install",
+    "local-firebase": "firebase emulators:start",
+    "dev": "next",
+    "nextbuild": "next build",
+    "nextstart": "next start"
   },
   "browserslist": {
     "production": [
@@ -32,7 +38,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "tailwind.config.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
