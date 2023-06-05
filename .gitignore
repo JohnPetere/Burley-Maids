@@ -261,3 +261,4 @@ burley-maids/.next/server/pages/_document.js
 burley-maids/.next/server/pages/_error.js
 burley-maids/.next/server/webpack-runtime.js
 burley-maids/.next/trace
+node_modules
