@@ -2,7 +2,8 @@
  A website for a start up cleaning business
  
  ## Technology used
-  - Firebase for web hosting
+  - <strike>Firebase for web hosting</strike>
+  - Netlify for website hosting. Firebase was not working with firebase, after mutliple project rebuilds and deploy attempts
   - React.js
   - Tailwind.css
   - Next.js for static serverside rendering and SEO
