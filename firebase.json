@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "source": "burley-maids/burley-maids",
+    "source": "burley-maids",
     "ignore": [
       "firebase.json",
       "**/.*",
