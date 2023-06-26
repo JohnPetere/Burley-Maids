@@ -17,7 +17,7 @@ const Navbar = () => {
               <img className="logo" src="/logo.svg" alt="Logo" />
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="desktop-nav-link">
             <div className="ml-10 flex items-baseline space-x-4">
               <a href="/" className="link">
                 Home

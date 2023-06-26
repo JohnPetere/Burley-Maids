@@ -18,4 +18,10 @@
  .nav-logo img{
     @apply flex-shrink-0
  }
+ .desktop-nav-link{
+    @apply hidden md:block
+ }
+ .desktop-nav-link-inner{
+    @apply ml-10 flex items-baseline space-x-4
+ }
 }
