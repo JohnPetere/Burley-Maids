@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components{
- .navbar{
+ /* .navbar{
     @apply bg-lavendarWeb
  }
  .nav-desktop-bar{
@@ -23,5 +23,5 @@
  }
  .desktop-nav-link-inner{
     @apply ml-10 flex items-baseline space-x-4
- }
+ } */
 }
