@@ -3,25 +3,5 @@
 @tailwind utilities;
 
 @layer components{
- .navbar{
-    @apply bg-lavendarWeb
- }
- .nav-desktop-bar{
-    @apply  max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
- }
- .inner-desktop-bar{
-    @apply flex items-center justify-between h-16
- }
- .nav-logo{
-    @apply flex items-center
- }
- .nav-logo img{
-    @apply flex-shrink-0
- }
- .desktop-nav-link{
-    @apply hidden md:block
- }
- .desktop-nav-link-inner{
-    @apply ml-10 flex items-baseline space-x-4
- }
+
 }
