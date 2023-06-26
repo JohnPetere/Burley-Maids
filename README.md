@@ -11,16 +11,30 @@
 
 ## Bugs/difficulties 
 ### Firebase difficulties
-
-#### Problem
+#### Description
 > I was initially trying to deploy the website onto firebase, however, there were incompabilities with package dependencies. I have tried adding, deleting packages, in combinations to no avail. I tried reviewing the code formatting, as I kept getting errors.
 
 #### Solution
 > I decided to use netlify to deploy it. Inititally, I had a lot of trouble. My solution involved multiple attempts at deploying, inlcuding upgrading my payment plan on firebase to "blaze". However, the main reason for it not working was, i forgot to remove the firebase depdency, as the firebase is still in the testing stages of hosting next.js applications on firebase. I removed firebase, deleted node_modules, peformed npm install, and reinstalled firebase. I was able to run it locally, as well deploy on
 
+###  Netlify tailwind styling in a css file Problem
+#### Description
+> I had trouble with putting tailwind styling inside a css file, as to make more readable, however netlify kept giving me trouble. Every time I link to the styles.css with the navbar, I keep getting weird errors when I deploy on netlify, either sayiing:
+ ```
+ // I kept getting this error: 
+ Module build failed: Error: Final loader (./node_modules/next/dist/build/webpack/loaders/error-loader.js) didn't return a Buffer or String
+ ```
+
+ >Or sometihng about global css such as: 
+
+ ```
+ Global CSS cannot be imported from files other than your Custom <App>. Due to the Global nature of stylesheets, and to avoid conflicts, Please move all first-party global CSS imports to pages/_app.js. Or convert the import to Component-Level CSS (CSS Modules).
+ ```
+#### Solution
+>idfk yet
 
  ## TODO Before building any pages
- - Convert into next.js app for SEO 
+ -<strike> Convert into next.js app for SEO </strike>
  - Change meta tags
  - Create tailwind.css template componenent for react and next.jss
  - Design NAV bar
