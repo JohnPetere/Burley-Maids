@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800">
-      <h1 className={navBar.primary}>This is primary</h1>
-      <h2  className={navBar.error}>This is secondary </h2>
+      <h1 className={navbar.primary}>This is primary</h1>
+      <h2  className={navbar.error}>This is secondary </h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
