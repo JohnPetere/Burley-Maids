@@ -1,4 +1,4 @@
-/*navBar.module.css*/
+/*navbar.module.css*/
 .primary {
     @apply bg-blue-700 text-white p-4 rounded-lg;
 }
