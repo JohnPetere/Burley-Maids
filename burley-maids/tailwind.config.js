@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/styles/fonts/*.{ttf}",
+    "./src/styles/fonts/*.ttf",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
  
     // Or if using `src` directory:
@@ -12,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        BrushScript: ['"Brush Script"']
+        BrushScript: ['"Brush Script"'],
+        SourceCodePro: ['"Source Code Pro"']
       },
       colors: {
         redWine: '#6d2a33',

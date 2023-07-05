@@ -11,45 +11,49 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-lavendarWeb">
+    <nav className="bg-lavendarWeb py-3">
   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 text-4xl">
+        <div className="flex items-center justify-between h-16 text-6xl">
           <div className="flex items-center">
+            <div className='px-4'>
             <Image
+            className='py-10'
             src={JoeLogo}
-            height={32}
-            width={32}
+            height={70}
+            width={70}
             alt="the logo"
             ></Image>
+
+            </div>
             <div className="flex-shrink-0 text-black font-BrushScript">
              Burley Maids
             </div>    
             
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 te ">
               <a
                 href="/"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
               </a>
               <a
                 href="/about"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
               </a>
               <a
                 href="/services"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 rounded-md text-sm font-medium"
               >
                 Services
               </a>
               <a
                 href="/contact"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
               </a>
