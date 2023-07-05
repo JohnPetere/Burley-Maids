@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import styles from "./navbar.module.js"
+ import Image from 'next/image'
+ import JoeLogo from '../../styles/svg/Joe-Logo.svg'
+ //'../../styles/svg/Joe-Logo.svg
+// import styles from "./navbar.module.css"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,15 +11,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800">
-      <h1 className={styles.primary}>This is primary</h1>
-      <h2  className={styles.error}>This is secondary </h2>
+    <nav className="bg-lavendarWeb">
+  
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 text-4xl">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <img className="h-8 w-8" src="/logo.svg" alt="Logo" />
-            </div>
+            <Image
+            src={JoeLogo}
+            height={32}
+            width={32}
+            alt="the logo"
+            ></Image>
+            <div className="flex-shrink-0 text-black font-BrushScript">
+             Burley Maids
+            </div>    
             
           </div>
           <div className="hidden md:block">
