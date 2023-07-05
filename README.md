@@ -33,7 +33,7 @@
  Global CSS cannot be imported from files other than your Custom <App>. Due to the Global nature of stylesheets, and to avoid conflicts, Please move all first-party global CSS imports to pages/_app.js. Or convert the import to Component-Level CSS (CSS Modules).
  ```
 #### Solution
-> Because of nothing found after 3 hours, I decided to do the tailwind ugly styling inside the html GRRRR. I hate how it looks. I kept getting the "GLOBAL CSS CANNOT BE IMPORTED". Bitch it's Tailwind, I can't use dammned componennt css modules. I want to start styling and actually making content. I'll see if I can find a more elegant solution in the future
+> This took way too long, mostly because I was lazing around the house, and sleeping. But it came to me randomly to try use a JSON approach!  Netlify likes it!, I tried the  naming schemescheme of "moduleName.module.css" for css files in components, however netlify still gave me the error. hence the now I'll use "moduleName.module.js". I probably should change it later
 
  ## TODO Before building any pages
  - Convert into next.js app for SEO 
