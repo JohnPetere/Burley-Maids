@@ -1,13 +1,15 @@
 # Burley Maids
- A website for a start up cleaning business
+ A website for a start up cleaning business. A friend wanted to start up a cleaning business so I used this as a sort of test of myself to build a website
  
  ## Technology used
   - <strike>Firebase for web hosting</strike>
   - Netlify for website hosting. Firebase was not working with firebase, after mutliple project rebuilds and deploy attempts
   - React.js
   - Tailwind.css
+  - ChatGPT: Used for filler text rather then using boring OL lorem ipsum
   - Next.js for static serverside rendering and SEO
   - Find something to host form shit
+  - Figma for the design
 
 ## Bugs/difficulties 
 ### Firebase difficulties
@@ -36,10 +38,23 @@
 > This took way too long, mostly because I was lazing around the house, and sleeping. But it came to me randomly to try use a JSON approach!  Netlify likes it!, I tried the  naming schemescheme of "moduleName.module.css" for css files in components, however netlify still gave me the error. hence the now I'll use "moduleName.module.js". I probably should change it later
 
  ## TODO Before building any pages
- - Convert into next.js app for SEO 
+ - <strike> Convert into next.js app for SEO </strike>
  - Change meta tags
+ - Change Favicon
+ - NavBar
+    - Mobile menu layout and colors
+ - footbar
+ - finish home page
+    - Carasoul
+    - We Clean you cllean
+    - Services thing
+    - Before and Afer
+
+ - Remove About Page from design 
+ - testimonies page
+ - Contact Page
  - Create tailwind.css template componenent for react and next.jss
- - Design NAV bar
+
  - design home page gallery
  - Add defualt 404 page
 
