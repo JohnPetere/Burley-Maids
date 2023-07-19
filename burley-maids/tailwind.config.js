@@ -21,6 +21,7 @@ module.exports = {
         lavendarWeb: '#dadff7',
         powderBlue: '#a0c1d1',
         frenchGray: '#b5b2c2',
+        sortaBigBlue:'#0FA3B1'
       },
     },
   },

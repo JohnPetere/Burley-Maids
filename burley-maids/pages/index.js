@@ -1,11 +1,12 @@
 
 import Navbar from "../components/navBar"
-import Carousel from "../components/carousel"
+import CarasuselMainPage from "../components/carouselMainPage"
 export default function Home() {
   return (
-   <div>
-    <Navbar/>
-    <Carousel/>
+   <div className=" w-max h-screen">
+    <Navbar/> 
+    <CarasuselMainPage/>
+   
    </div>
   )
 }
