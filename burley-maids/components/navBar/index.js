@@ -26,34 +26,42 @@ const Navbar = () => {
             ></Image>
 
             </div>
-            <div className="flex-shrink-0 text-black font-BrushScript">
+            <div className="flex-shrink-0
+             text-black 
+             font-BrushScript
+             hover:text-redWine">
              Burley Maids
             </div>    
             
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4 te ">
+          <div className="hidden md:block ">
+            <div className="ml-10 flex 
+            items-baseline 
+            space-x-4 text-xl 
+            font-bold tracking-wide 
+           
+            ">
               <a
                 href="/"
-                className=" px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 hover:text-redWine"
               >
                 Home
               </a>
               <a
                 href="/about"
-                className=" px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 hover:text-redWine"
               >
                 About
               </a>
               <a
                 href="/services"
-                className=" px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 hover:text-redWine"
               >
                 Services
               </a>
               <a
                 href="/contact"
-                className=" px-3 py-2 rounded-md text-sm font-medium"
+                className=" px-3 py-2 hover:text-redWine "
               >
                 Contact
               </a>
