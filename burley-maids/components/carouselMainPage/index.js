@@ -7,32 +7,41 @@ let CarasuselMainPage = () => {
 
   return (
     <div className=" h-96 w-full  
-     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')]">
+     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')] justify-center">
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}
         <div  
        
         className="
+      
+        
+        
         " >
     
           <div className='
-          bg-lavendarWeb/60
-
+          flex
+          flex-col
+          justify-evenly
+          bg-sortaBigBlue
+          text-white
+         
+          bg-opacity-50
           bg- w-full h-64 
           sm:w-full
           md:w-full
           lg:w-1/2
           xl:w-1/2
           2xl:w-1/2
+          text-2xl
        
-       
+           
            
             
             
             px-14'>
             <h2 
-            className="mx-4">
+            className="mx-4  ">
               A Cleaner, spotless home is a message or call away!
             </h2>
             <h2
