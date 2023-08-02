@@ -3,10 +3,19 @@ import Navbar from "../components/navBar"
 import CarasuselMainPage from "../components/carouselMainPage"
 export default function Home() {
   return (
-   <div className=" w-max h-screen">
-    <Navbar/> 
-    <CarasuselMainPage/>
-   
-   </div>
+    <div className=" h-auto w-screen flex flex-col ">
+        <Navbar className="w-screen" />
+      <div className=" bg-green-600 w-full h-auto flex justify-center">
+        <div className=" w-4/5 flex flex-col  ">
+
+          <CarasuselMainPage className="flex"  />
+          <div className=" flex w-full h-96 bg-red-700">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   )
 }
