@@ -12,6 +12,12 @@
   - Figma for the design
 
 ## Bugs/difficulties 
+### Image gallery styling errors
+#### Problem
+>I made a mess of styling, it was a lot of spaghetti interlocked nonsense with tailwind. I think I had way to many conflicting styles with the image. The image for the gallery kept spilling over.
+
+#### Solution
+> I revamped the styling completly, and used a background url image, as it was cleaner. 
 ### Firebase difficulties
 #### Description
 
@@ -60,6 +66,18 @@
 
 ### Index Page
  - Home page
+   - Carasoul
+      - <strike> Complete original styling for carasoul </strike>
+      - code out functions such as nextSlide, prevSlilde, and goToSlide(slideNum)
+      - invisible little buttons on the side will go to next/prev, that will use prevSlide, wich will just call goToSlide(-1), and nextSllide will just call goToSlide(1)
+         - goToSlide will just change values based on an object array
+         - the Slide object will have: imageURL, header-1, header-2, button-text, and button-link    
+      - add navigation button things to the bottom.
+         - the button navigations has values, then it sends to (goToSlide)
+      - Make it self populate with
+      - 
+
+   
 
 ### Testomonials page
  - something
