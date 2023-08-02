@@ -1,20 +1,24 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+
 let CarasuselMainPage = () => {
 
 
   return (
-    <div className=" h-96 w-full   flex flex-col bg-red-50 ">
+    <div className=" h-96 w-full  
+     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')]">
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}
         <div  
-
+       
         className="
         " >
     
           <div className='
+          bg-lavendarWeb/60
+
           bg- w-full h-64 
           sm:w-full
           md:w-full
