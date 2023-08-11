@@ -3,7 +3,15 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 let CarasuselMainPage = () => {
+  let goToSLilde = ()=>{
 
+  }
+  let nextSlide =()=>{
+
+  }
+  let prevSlide = ()=>{
+
+  }
 
   return (
     <div className=" h-96 w-full  
@@ -25,7 +33,7 @@ let CarasuselMainPage = () => {
           justify-evenly
           bg-sortaBigBlue
           text-white
-         
+
           bg-opacity-50
           bg- w-full h-64 
           sm:w-full
@@ -34,9 +42,6 @@ let CarasuselMainPage = () => {
           xl:w-1/2
           2xl:w-1/2
           text-2xl
-       
-           
-           
             
             
             px-14'>
