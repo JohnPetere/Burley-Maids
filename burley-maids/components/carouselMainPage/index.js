@@ -26,11 +26,7 @@ let CarasuselMainPage = () => {
       <div className=" ">
         {/* Each elemente is a slide */}
         <div  
-       
         className="
-      
-        
-        
         " >
     
           <div className='
@@ -78,7 +74,7 @@ let CarasuselMainPage = () => {
         </div>
    
       </div>
-      {/* Button nav things here */}
+
       <div>
       
       </div>
