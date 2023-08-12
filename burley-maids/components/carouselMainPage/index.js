@@ -1,5 +1,9 @@
 
 import Image from 'next/image';
+import leftButton from '../../styles/svg/chevron-left-button.svg'
+import rightButton from '../../styles/svg/chevron-right-button.svg'
+
+// import JoeLogo from '../../styles/svg/Joe-Logo.svg'
 import { useState } from 'react';
 import slideData from './slideData';
 // I am probably going to use getServerSideProps....
@@ -28,7 +32,7 @@ let CarasuselMainPage = () => {
         <div  
         className="
         " >
-    
+          
           <div className='
           flex
           flex-col
@@ -47,6 +51,8 @@ let CarasuselMainPage = () => {
             
             
             px-14'>
+              <div></div>
+              <div></div>
             <h2 
             className="mx-4  ">
               A Cleaner, spotless home is a message or call away!
@@ -74,7 +80,7 @@ let CarasuselMainPage = () => {
         </div>
    
       </div>
-
+      {/* buttons here*/}
       <div>
       
       </div>
