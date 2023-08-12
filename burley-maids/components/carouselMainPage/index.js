@@ -10,7 +10,7 @@ import slideData from './slideData';
 // then use Map??? well see....
 let CarasuselMainPage = () => {
   let goToSlide = ()=>{
-
+    console.log("You pressed Slide: ")
   }
   let nextSlide =()=>{
 
@@ -25,7 +25,7 @@ let CarasuselMainPage = () => {
 
   return (
     <div className=" h-96 w-full  
-     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')] justify-center">
+     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')] justify-around">
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}
@@ -51,8 +51,7 @@ let CarasuselMainPage = () => {
             
             
             px-14'>
-              <div></div>
-              <div></div>
+             
             <h2 
             className="mx-4  ">
               A Cleaner, spotless home is a message or call away!
@@ -73,16 +72,42 @@ let CarasuselMainPage = () => {
             hover:text-lavendarWeb
             hover:bg-redWine
             py-3
-             font-bold'
-             href='/'
+            font-bold'
+            href='/'
             >Free quote</a>
           </div>
         </div>
    
       </div>
       {/* buttons here*/}
-      <div>
-      
+      <div
+      className=' flex 
+      flex-row 
+      self-center 
+      items-center
+      justify-around
+      h-10 
+     
+      text-4xl 
+      text-redWine
+      '>
+          <div
+          className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
+          id={1}
+          onClick={goToSlide}
+          >
+
+          </div>
+          <div
+          className='w-12 h-4 mx-4 bg-lavendarWeb'
+          >
+
+          </div>
+          <div
+          className='w-12 h-4 mx-4 bg-lavendarWeb'
+          >
+
+          </div>
       </div>
     </div>
   );
