@@ -9,6 +9,9 @@ import slideData from './slideData';
 // I am probably going to use getServerSideProps....
 // then use Map??? well see....
 let CarasuselMainPage = () => {
+  // let currentSlide;
+
+  const [imageURL, header1, header2, buttonText,] = useState(0);
   let goToSlide = ()=>{
     console.log("You pressed Slide: ")
   }
@@ -19,13 +22,25 @@ let CarasuselMainPage = () => {
 
   }
   let populateSlides = ()=>{
+    let slides = [];
 
-  }
+    slideData.map((slide) => ({
+        // [p[i;ate s;odes]]
+
+    }))
 
 
+    return <></>;
+  } // I am probably gonna make it fade in and out before and after each time the variables switch.... 
+  // I need to figure out a way to put the image url into line 43 in a efficent manner, I may try to put it in a variable before the return
+  // however, I need to make sure that the url changes every time the slide swithces all the variables...
+//https://i.imgur.com/zhd5Dfj.jpeg
+//https://picsum.photos/seed/picsum/200/300
+//https://picsum.photos/200/300?grayscale
+  console.table(slideData)
   return (
     <div className=" h-96 w-full  
-     flex flex-col bg-[url('https://i.imgur.com/zhd5Dfj.jpeg')] justify-around">
+     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around">
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}

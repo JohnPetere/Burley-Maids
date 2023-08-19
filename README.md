@@ -112,6 +112,7 @@
  - [Converting to react to next.js](https://stefaniq.com/migrating-your-react-app-to-next-js-a-comprehensive-guide/)
  - [Adding Talwind css on next.js documentaiton](https://nextjs.org/docs/app/building-your-application/styling/tailwind-css)
  - [Component tailwind.css with next.js fix](https://www.geeksforgeeks.org/how-to-use-tailwind-apply-in-css-modules-in-next-js/)
+ - [next.js get data from a file path](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)
 ### Useful commands
  - local firebase server emulator
  ' firebase emulators:start '
