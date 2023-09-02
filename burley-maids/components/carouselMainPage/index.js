@@ -20,14 +20,16 @@ let CarasuselMainPage = () => {
     let buttons = [];
     slideData.map((slide)=>{
       let slideElm
-     
+      
         if(i === currentIndex){
+          console.log('this is i ' + i)
           slideElm =  <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
             
           onClick={() => {  goToSlide(i)}}
           >{i}
             </div>
+          
         }else{
           slideElm =  <div
           className='w-12 h-4 mx-4 bg-lavendarWeb'
