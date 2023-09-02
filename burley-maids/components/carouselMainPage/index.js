@@ -14,9 +14,38 @@ let CarasuselMainPage = () => {
  "bg-[url('https://picsum.photos/seed/picsum/200/300"+
  "')]";
  const [currentIndex, setCurrentIndex] = useState(0); 
+  let popNavButtons = ()=>{
+    let i = -1;
+    let buttons = [];
+    slideData.map((slide)=>{
+      let slideElm
+      i++;
+        if(i === currentIndex){
+          slideElm =  <div
+          className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
+       
+          onClick={goToSlide}
+          >
+            </div>
+        }else{
+          slideElm =  <div
+          className='w-12 h-4 mx-4 bg-lavendarWeb'
+          onClick={goToSlide}
+          >
+            </div>
+   
+        }
+        
+        buttons.push(slideElm)
+      })
+      console.log(buttons)
+    return buttons
+  }
+  let changeNavButton = ()=>{
 
+  }
   let goToSlide = ()=>{
-
+      console.log('YOU Clicked on button nav # ')
   }
   let nextSlide =()=>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
@@ -24,7 +53,7 @@ let CarasuselMainPage = () => {
   }
 
   useEffect(()=>{
-   const interval = setInterval(nextSlide,700); 
+   const interval = setInterval(nextSlide,3000); 
   
    return () => clearInterval(interval);
   }, [currentIndex]);
@@ -34,7 +63,7 @@ let CarasuselMainPage = () => {
 //https://i.imgur.com/zhd5Dfj.jpeg
 //https://picsum.photos/seed/picsum/200/300
 //https://picsum.photos/200/300?grayscale
-
+  popNavButtons();
   return (
     <div className=" h-96 w-full  
      flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around"
@@ -103,6 +132,7 @@ let CarasuselMainPage = () => {
       </div>
       {/* buttons here*/}
       <div
+      id='caraNavButtons'
       className=' flex 
       flex-row 
       self-center 
@@ -113,9 +143,14 @@ let CarasuselMainPage = () => {
       text-4xl 
       text-redWine
       '>
-          <div
+  
+        {
+        
+          popNavButtons()
+        }
+          {/* <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
-          id={1}
+          id=''
           onClick={goToSlide}
           >
 
@@ -129,7 +164,7 @@ let CarasuselMainPage = () => {
           className='w-12 h-4 mx-4 bg-lavendarWeb'
           >
 
-          </div>
+          </div> */}
       </div>
     </div>
   );
