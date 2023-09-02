@@ -65,6 +65,7 @@
  - Add defualt 404 page
 
 ### Index Page
+- FIX THE FUCKING FONT LOADING PROBLEM LATER
  - Home page
    - Carasoul
       - <strike> Complete original styling for carasoul </strike>

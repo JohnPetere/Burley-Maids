@@ -4,34 +4,31 @@ import leftButton from '../../styles/svg/chevron-left-button.svg'
 import rightButton from '../../styles/svg/chevron-right-button.svg'
 
 // import JoeLogo from '../../styles/svg/Joe-Logo.svg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import slideData from './slideData';
 // I am probably going to use getServerSideProps....
 // then use Map??? well see....
 let CarasuselMainPage = () => {
   // let currentSlide;
-
-  const [imageURL, header1, header2, buttonText,] = useState(0);
+ let galleryBackgroundClassNames = "h-96 w-full  flex flex-col justify-around"+
+ "bg-[url('https://picsum.photos/seed/picsum/200/300"+
+ "')]";
+ const [currentIndex, setCurrentIndex] = useState(0); 
+ const [imageURL, header1, header2, buttonText,] = useState(0);
   let goToSlide = ()=>{
-    console.log("You pressed Slide: ")
+
   }
   let nextSlide =()=>{
-
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + slideData.length) % slideData.length);
+    console.log('nextSLide()')
   }
-  let prevSlide = ()=>{
 
-  }
-  let populateSlides = ()=>{
-    let slides = [];
-
-    slideData.map((slide) => ({
-        // [p[i;ate s;odes]]
-
-    }))
-
-
-    return <></>;
-  } // I am probably gonna make it fade in and out before and after each time the variables switch.... 
+  useEffect(()=>{
+   const interval = setInterval(setInterval(nextSlide,1000)); 
+  
+   return () => clearInterval(interval);
+  }, [currentIndex]);
+ // I am probably gonna make it fade in and out before and after each time the variables switch.... 
   // I need to figure out a way to put the image url into line 43 in a efficent manner, I may try to put it in a variable before the return
   // however, I need to make sure that the url changes every time the slide swithces all the variables...
 //https://i.imgur.com/zhd5Dfj.jpeg
@@ -69,11 +66,15 @@ let CarasuselMainPage = () => {
              
             <h2 
             className="mx-4  ">
-              A Cleaner, spotless home is a message or call away!
+             {
+              slideData[currentIndex].header1
+             }
             </h2>
             <h2
             className="mx-4">
-              Contact us without delay!
+               {
+              slideData[currentIndex].header2
+             }
             </h2>
             <a
             className='bg-lavendarWeb 
@@ -88,8 +89,12 @@ let CarasuselMainPage = () => {
             hover:bg-redWine
             py-3
             font-bold'
-            href='/'
-            >Free quote</a>
+            href={slideData[currentIndex].buttonLink}
+            >
+              {
+                slideData[currentIndex].buttonText
+              }
+            </a>
           </div>
         </div>
    

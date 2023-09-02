@@ -19,7 +19,7 @@ let slideData = [
       imageURL:"https://picsum.photos/200/300?grayscale",
       header1:"NO need to fear",
       header2:"IF you like king lear",
-      buttonText:"not Button Text",
+      buttonText:"KISS ME",
       buttonLink:"https://www.sometimesredsometimesblue.com/",
 
     },
