@@ -14,17 +14,17 @@ let CarasuselMainPage = () => {
  "bg-[url('https://picsum.photos/seed/picsum/200/300"+
  "')]";
  const [currentIndex, setCurrentIndex] = useState(0); 
- const [imageURL, header1, header2, buttonText,] = useState(0);
+
   let goToSlide = ()=>{
 
   }
   let nextSlide =()=>{
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slideData.length) % slideData.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
     console.log('nextSLide()')
   }
 
   useEffect(()=>{
-   const interval = setInterval(setInterval(nextSlide,1000)); 
+   const interval = setInterval(nextSlide,700); 
   
    return () => clearInterval(interval);
   }, [currentIndex]);
@@ -34,7 +34,7 @@ let CarasuselMainPage = () => {
 //https://i.imgur.com/zhd5Dfj.jpeg
 //https://picsum.photos/seed/picsum/200/300
 //https://picsum.photos/200/300?grayscale
-  console.table(slideData)
+
   return (
     <div className=" h-96 w-full  
      flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around">
