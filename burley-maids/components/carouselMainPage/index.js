@@ -15,37 +15,38 @@ let CarasuselMainPage = () => {
  "')]";
  const [currentIndex, setCurrentIndex] = useState(0); 
   let popNavButtons = ()=>{
-    let i = -1;
+    let i = 0;
+
     let buttons = [];
     slideData.map((slide)=>{
       let slideElm
-      i++;
+     
         if(i === currentIndex){
           slideElm =  <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
-       
-          onClick={goToSlide}
-          >
+            
+          onClick={() => {  goToSlide(i)}}
+          >{i}
             </div>
         }else{
           slideElm =  <div
           className='w-12 h-4 mx-4 bg-lavendarWeb'
-          onClick={goToSlide}
+          onClick={() => {  goToSlide(i)}}
           >
             </div>
    
         }
-        
+        i++;
         buttons.push(slideElm)
       })
-      console.log(buttons)
+   
     return buttons
   }
   let changeNavButton = ()=>{
 
   }
-  let goToSlide = ()=>{
-      console.log('YOU Clicked on button nav # ')
+  let goToSlide = (i)=>{
+      console.log('YOU Clicked on button nav # '+ i)
   }
   let nextSlide =()=>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);

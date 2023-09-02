@@ -13,13 +13,18 @@
 
 ## Bugs/difficulties 
 ### Image gallery styling errors
+
+#### Problem
+> Every time the useEffect goes to another page, the nav buttons for the carasoul will run goToSlide(3x), rather then the click activiating it. I think when it rendars in popNavButtons, it will do that. Might try changeing it to button, and make it only load once, maybe I'll try making it a component in another file. Not sure why it's doing this. It makes it hard to make the buttons go to the correct slide when pressed. 
+
+#### Solution
+>Turns out, when I typed out exactly like 'onClick=goToSLide(i)' that would be calling it, I need to type it out like such 'onClick= {()=> goToSlide(i)}, this makes it more like a reference according to javaScript
 #### Problem
 >I made a mess of styling, it was a lot of spaghetti interlocked nonsense with tailwind. I think I had way to many conflicting styles with the image. The image for the gallery kept spilling over.
-
+ - [Learn More here](https://stackoverflow.com/questions/33846682/react-onclick-function-fires-on-render)
 #### Solution
 > I revamped the styling completly, and used a background url image, as it was cleaner. 
 ### Firebase difficulties
-#### Description
 
 #### Problem
 > I was initially trying to deploy the website onto firebase, however, there were incompabilities with package dependencies. I have tried adding, deleting packages, in combinations to no avail. I tried reviewing the code formatting, as I kept getting errors.
@@ -43,7 +48,7 @@
 #### Solution
 > This took way too long, mostly because I was lazing around the house, and sleeping. But it came to me randomly to try use a JSON approach!  Netlify likes it!, I tried the  naming schemescheme of "moduleName.module.css" for css files in components, however netlify still gave me the error. hence the now I'll use "moduleName.module.js". I probably should change it later
 
- ## TODO Before building any pages
+ ## TODO General
  - <strike> Convert into next.js app for SEO </strike>
  - Change meta tags
  - Change Favicon
@@ -69,10 +74,8 @@
  - Home page
    - Carasoul
       - <strike> Complete original styling for carasoul </strike>
-      - code out functions such as nextSlide, prevSlilde, and goToSlide(slideNum)
-      - invisible little buttons on the side will go to next/prev, that will use prevSlide, wich will just call goToSlide(-1), and nextSllide will just call goToSlide(1)
-         - goToSlide will just change values based on an object array
-         - the Slide object will have: imageURL, header-1, header-2, button-text, and button-link    
+      - code out functions such as<strike>  nextSlide </strike>,  <strike> prevSlilde </strike>, and goToSlide(slideNum)
+      
       - add navigation button things to the bottom.
          - the button navigations has values, then it sends to (goToSlide)
       - Make it self populate with
