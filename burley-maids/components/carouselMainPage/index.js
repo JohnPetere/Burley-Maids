@@ -20,7 +20,7 @@ let CarasuselMainPage = () => {
   }
   let nextSlide =()=>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
-    console.log('nextSLide()')
+  
   }
 
   useEffect(()=>{
@@ -37,7 +37,9 @@ let CarasuselMainPage = () => {
 
   return (
     <div className=" h-96 w-full  
-     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around">
+     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around"
+     
+     >
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}
