@@ -15,6 +15,7 @@ let CarasuselMainPage = () => {
  "')]";
  const [currentIndex, setCurrentIndex] = useState(0); 
   let popNavButtons = ()=>{
+    let buttons = [];
       for(let i = 0; i < slideData.length; i++){
         let slideElm
       
@@ -42,7 +43,6 @@ let CarasuselMainPage = () => {
 
   }
   let goToSlide = (i)=>{
-      console.log('YOU Clicked on button nav # '+ i)
       setCurrentIndex(i);
   }
   let nextSlide =()=>{
