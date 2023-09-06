@@ -19,15 +19,41 @@ let CarasuselMainPage = () => {
 
     let buttons = [];
     slideData.map((slide)=>{
-      let slideElm
+      // let slideElm
+      
+      //   if(i === currentIndex){
+      //     console.log('this is i ' + i)
+      //     const x = i;
+      //     slideElm =  <div
+      //     className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
+            
+      //     onClick={() => {  goToSlide(x)}}
+      //     >{x}
+      //       </div>
+          
+      //   }else{
+      //     slideElm =  <div
+      //     className='w-12 h-4 mx-4 bg-lavendarWeb'
+      //     onClick={() => {  goToSlide(x)}}
+      //     >
+      //       </div>
+   
+      //   }
+      //   buttons.push(slideElm)
+      //   i++;
+      })
+
+      for(let i = 0; i < slideData.length; i++){
+        let slideElm
       
         if(i === currentIndex){
           console.log('this is i ' + i)
+          const x = i;
           slideElm =  <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
             
           onClick={() => {  goToSlide(i)}}
-          >{i}
+          >{x}
             </div>
           
         }else{
@@ -38,9 +64,8 @@ let CarasuselMainPage = () => {
             </div>
    
         }
-        i++;
         buttons.push(slideElm)
-      })
+      }
    
     return buttons
   }
@@ -49,6 +74,7 @@ let CarasuselMainPage = () => {
   }
   let goToSlide = (i)=>{
       console.log('YOU Clicked on button nav # '+ i)
+      setCurrentIndex(i);
   }
   let nextSlide =()=>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
@@ -68,7 +94,7 @@ let CarasuselMainPage = () => {
 //https://picsum.photos/200/300?grayscale
   popNavButtons();
   return (
-    <div className=" h-96 w-full  
+    <div id='galleryBackground' className=" h-96 w-full  
      flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around"
      
      >
