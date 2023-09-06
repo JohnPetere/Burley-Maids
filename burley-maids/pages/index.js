@@ -3,7 +3,7 @@ import Navbar from "../components/navBar"
 import CarasuselMainPage from "../components/carouselMainPage"
 export default function Home() {
   return (
-    <div className=" h-auto w-screen flex flex-col ">
+    <div className=" h-auto w-auto flex flex-col overflow-hidden">
         <Navbar className="" />
       <div className=" bg-green-600 w-full h-auto flex justify-center">
         <div className=" w-4/5 flex flex-col  ">

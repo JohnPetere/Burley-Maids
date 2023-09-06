@@ -22,7 +22,7 @@ let CarasuselMainPage = () => {
         if(i === currentIndex){
           const x = i;
           slideElm =  <div
-          className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
+          className='w-16  h-4 mx-4 bg-redWine border-2 border-black rounded-lg'
             
           onClick={() => {  goToSlide(i)}}
           >
@@ -30,7 +30,7 @@ let CarasuselMainPage = () => {
           
         }else{
           slideElm =  <div
-          className='w-12 h-4 mx-4 bg-lavendarWeb'
+          className='w-12 h-4 mx-4 bg-lavendarWeb border-1 border-black rounded-lg'
           onClick={() => {  goToSlide(i)}}
           >
             </div>

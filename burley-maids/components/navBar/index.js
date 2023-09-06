@@ -14,27 +14,28 @@ const Navbar = () => {
     <nav className="bg-lavendarWeb py-3">
   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 text-6xl">
+        <div className="flex items-center justify-between h-16 text-3xl">
           <div className="flex items-center">
             <div className='px-4'>
             <Image
             className='py-10'
             src={JoeLogo}
-            height={70}
-            width={70}
+           width={70}
+           height={70}
             alt="the logo"
-            ></Image>
+            />
 
             </div>
             <div className="flex-shrink-0
              text-black 
              font-BrushScript
+            lg:text-5xl
              hover:text-redWine">
              Burley Maids
             </div>    
             
           </div>
-          <div className="hidden md:block ">
+          <div className="hidden md:block  ">
             <div className="ml-10 flex 
             items-baseline 
             space-x-4 text-xl 
@@ -67,7 +68,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex md:hidden text-black">
             <button
               onClick={toggleNavbar}
               type="button"
@@ -115,28 +116,28 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
             <a
               href="/"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </a>
             <a
               href="/about"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               About
             </a>
             <a
               href="/services"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Services
             </a>
             <a
               href="/contact"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
             </a>

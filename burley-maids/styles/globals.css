@@ -9,7 +9,22 @@
   font-weight: 400;
   src: local(''), url('../public/fonts/brushScript/Brush\ Script\ Regular.ttf')
 }
+@font-face{
+  font-family:'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(), url('../public/fonts/sourceCodePro/SourceCodePro-Italic-VariableFont_wght.ttf')
+}
 html,
 body {
-  @apply font-SourceCodePro
+  @apply font-SourceCodePro 
+
+}
+html,
+body{
+
+}
+#__next{
+  min-width: 300px;
+
 }
