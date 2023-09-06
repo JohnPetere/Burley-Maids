@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
  import Image from 'next/image'
  import JoeLogo from '../../styles/svg/Joe-Logo.svg'
+ import Link from 'next/link'
  //'../../styles/svg/Joe-Logo.svg
 // import styles from "./navbar.module.css"
 const Navbar = () => {
@@ -26,13 +27,13 @@ const Navbar = () => {
             />
 
             </div>
-            <div className="flex-shrink-0
+            <Link href='/'className="flex-shrink-0
              text-black 
              font-BrushScript
             lg:text-5xl
              hover:text-redWine">
              Burley Maids
-            </div>    
+            </Link>    
             
           </div>
           <div className="hidden md:block  ">
@@ -40,39 +41,32 @@ const Navbar = () => {
             items-baseline 
             space-x-4 text-xl 
             font-bold tracking-wide 
-           
             ">
-              <a
-                href="/"
-                className=" px-3 py-2 hover:text-redWine"
-              >
-                Home
-              </a>
-              <a
-                href="/about"
-                className=" px-3 py-2 hover:text-redWine"
-              >
-                About
-              </a>
-              <a
-                href="/services"
+              <Link
+                href="services"
                 className=" px-3 py-2 hover:text-redWine"
               >
                 Services
-              </a>
-              <a
-                href="/contact"
-                className=" px-3 py-2 hover:text-redWine "
+              </Link>
+              <Link
+                href="/Testimonies"
+                className=" px-3 py-2 hover:text-redWine"
               >
-                Contact
-              </a>
+               Testimonies
+              </Link>
+              <Link
+                href="/contact"
+                className=" px-3 py-2 hover:text-redWine"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden text-black">
             <button
               onClick={toggleNavbar}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-70"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -117,30 +111,30 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-            <a
+            <Link
               href="/"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/services"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}

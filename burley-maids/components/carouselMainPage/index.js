@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import leftButton from '../../styles/svg/chevron-left-button.svg'
 import rightButton from '../../styles/svg/chevron-right-button.svg'
-
+import Link from 'next/link'
 // import JoeLogo from '../../styles/svg/Joe-Logo.svg'
 import { useEffect, useState } from 'react';
 import slideData from './slideData';
@@ -85,12 +85,22 @@ let CarasuselMainPage = () => {
           bg-opacity-50
           bg- w-full h-64 
           sm:w-full
+          sm:w-3/4
+          
+          sm:text-center
           md:w-full
+          md:text-center
+          md:text-3xl
           lg:w-1/2
+          lg:text-left
+          lg:text-xl
+          xl:text-2xl
+          xl:text-lg
           xl:w-1/2
           2xl:w-1/2
-          text-2xl
-            
+          2xl:text-3xl
+          2xl:text-lef
+
             
             px-14'>
              
@@ -106,12 +116,20 @@ let CarasuselMainPage = () => {
               slideData[currentIndex].header2
              }
             </h2>
-            <a
+            <Link
             className='bg-lavendarWeb 
             rounded-md
             text-3xl
+            w-1/2
             self-center
-            w-4/12 
+            sm:p-0;
+            sm:text-lg
+            md:w-2/5
+            md:text-xl
+            lg:w-1/2 
+            lg:text-2xl
+            xl:text-3xl
+            xl:w-1/2
             font-BrushScript 
             text-center
             text-redWine
@@ -124,7 +142,7 @@ let CarasuselMainPage = () => {
               {
                 slideData[currentIndex].buttonText
               }
-            </a>
+            </Link>
           </div>
         </div>
       </div>

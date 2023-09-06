@@ -55,11 +55,12 @@
  - <strike> Convert into next.js app for SEO </strike>
  - Change meta tags
  - Change Favicon
- - NavBar
-    - Mobile menu layout and colors
+ - make 80% a custom class for all pages, when it gets to size md, it gets to 100
+ - <strike>  NavBar</strike>
+    -<strike>  Mobile menu layout and colors</strike>
  - footbar
  - finish home page
-    - Carasoul
+    - <strike> Carasoul</strike>
     - We Clean you cllean
     - Services thing
     - Before and Afer

@@ -1,4 +1,4 @@
-function News({ children, ...props }) {
+function Testimonies({ children, ...props }) {
   return (
     <div className>
       {children}
@@ -7,4 +7,4 @@ function News({ children, ...props }) {
   );
 }
 
-export default News;
+export default Testimonies;

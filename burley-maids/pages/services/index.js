@@ -1,4 +1,4 @@
-function Service({ children, ...props }) {
+function Services({ children, ...props }) {
   return (
     <div className>
       {children}
@@ -7,4 +7,4 @@ function Service({ children, ...props }) {
   );
 }
 
-export default Service;
+export default Services;
