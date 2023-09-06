@@ -15,39 +15,10 @@ let CarasuselMainPage = () => {
  "')]";
  const [currentIndex, setCurrentIndex] = useState(0); 
   let popNavButtons = ()=>{
-    let i = 0;
-
-    let buttons = [];
-    slideData.map((slide)=>{
-      // let slideElm
-      
-      //   if(i === currentIndex){
-      //     console.log('this is i ' + i)
-      //     const x = i;
-      //     slideElm =  <div
-      //     className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
-            
-      //     onClick={() => {  goToSlide(x)}}
-      //     >{x}
-      //       </div>
-          
-      //   }else{
-      //     slideElm =  <div
-      //     className='w-12 h-4 mx-4 bg-lavendarWeb'
-      //     onClick={() => {  goToSlide(x)}}
-      //     >
-      //       </div>
-   
-      //   }
-      //   buttons.push(slideElm)
-      //   i++;
-      })
-
       for(let i = 0; i < slideData.length; i++){
         let slideElm
       
         if(i === currentIndex){
-       
           const x = i;
           slideElm =  <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
@@ -62,11 +33,9 @@ let CarasuselMainPage = () => {
           onClick={() => {  goToSlide(i)}}
           >
             </div>
-   
         }
         buttons.push(slideElm)
       }
-   
     return buttons
   }
   let changeNavButton = ()=>{
@@ -157,7 +126,6 @@ let CarasuselMainPage = () => {
             </a>
           </div>
         </div>
-   
       </div>
       {/* buttons here*/}
       <div
@@ -172,28 +140,10 @@ let CarasuselMainPage = () => {
       text-4xl 
       text-redWine
       '>
-  
         {
         
           popNavButtons()
         }
-          {/* <div
-          className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
-          id=''
-          onClick={goToSlide}
-          >
-
-          </div>
-          <div
-          className='w-12 h-4 mx-4 bg-lavendarWeb'
-          >
-
-          </div>
-          <div
-          className='w-12 h-4 mx-4 bg-lavendarWeb'
-          >
-
-          </div> */}
       </div>
     </div>
   );
