@@ -5,7 +5,7 @@ import '../styles/globals.css'
 const BrushScript = localFont({src: './fonts/brushScript/Brush Script Regular.ttf'})
 export default function MyApp({ Component, pageProps }) {
   
-  return <Component className={`${BrushScript.className} h-auto w-screen flex flex-col `} {...pageProps}>
+  return <Component className={`${BrushScript.variable} h-auto w-screen flex flex-col `} {...pageProps}>
 
    <Navbar/>
   </Component>
