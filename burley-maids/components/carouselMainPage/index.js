@@ -47,13 +47,13 @@ let CarasuselMainPage = () => {
         let slideElm
       
         if(i === currentIndex){
-          console.log('this is i ' + i)
+       
           const x = i;
           slideElm =  <div
           className='w-16  h-6 mx-4 bg-redWine border-2 border-black rounded-lg'
             
           onClick={() => {  goToSlide(i)}}
-          >{x}
+          >
             </div>
           
         }else{
