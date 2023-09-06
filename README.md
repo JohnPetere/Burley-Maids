@@ -12,28 +12,31 @@
   - Figma for the design
 
 ## Bugs/difficulties 
-### Image gallery styling errors
 
-#### Problem
+### PRoblem
+> I spent 3 hours somehow trying to figure out how to load fonts on the website. Or 4. I don't remember
+### Solution
+> I followed the link bellow called :How to add fonts when are using both tailwind and next.js
+### Problem
 > Every time the useEffect goes to another page, the nav buttons for the carasoul will run goToSlide(3x), rather then the click activiating it. I think when it rendars in popNavButtons, it will do that. Might try changeing it to button, and make it only load once, maybe I'll try making it a component in another file. Not sure why it's doing this. It makes it hard to make the buttons go to the correct slide when pressed. 
 
-#### Solution
+### Solution
 >Turns out, when I typed out exactly like 'onClick=goToSLide(i)' that would be calling it, I need to type it out like such 'onClick= {()=> goToSlide(i)}, this makes it more like a reference according to javaScript
-#### Problem
+### Problem
 >I made a mess of styling, it was a lot of spaghetti interlocked nonsense with tailwind. I think I had way to many conflicting styles with the image. The image for the gallery kept spilling over.
  - [Learn More here](https://stackoverflow.com/questions/33846682/react-onclick-function-fires-on-render)
-#### Solution
+### Solution
 > I revamped the styling completly, and used a background url image, as it was cleaner. 
-### Firebase difficulties
 
-#### Problem
+
+### Problem
 > I was initially trying to deploy the website onto firebase, however, there were incompabilities with package dependencies. I have tried adding, deleting packages, in combinations to no avail. I tried reviewing the code formatting, as I kept getting errors.
 
-#### Solution
+### Solution
 > I decided to use netlify to deploy it. Inititally, I had a lot of trouble. My solution involved multiple attempts at deploying, inlcuding upgrading my payment plan on firebase to "blaze". However, the main reason for it not working was, i forgot to remove the firebase depdency, as the firebase is still in the testing stages of hosting next.js applications on firebase. I removed firebase, deleted node_modules, peformed npm install, and reinstalled firebase. I was able to run it locally, as well deploy on
 
-###  Netlify tailwind styling in a css file Problem
-#### Description
+
+### Description
 > I had trouble with putting tailwind styling inside a css file, as to make more readable, however netlify kept giving me trouble. Every time I link to the styles.css with the navbar, I keep getting weird errors when I deploy on netlify, either sayiing:
  ```
  // I kept getting this error: 
@@ -45,7 +48,7 @@
  ```
  Global CSS cannot be imported from files other than your Custom <App>. Due to the Global nature of stylesheets, and to avoid conflicts, Please move all first-party global CSS imports to pages/_app.js. Or convert the import to Component-Level CSS (CSS Modules).
  ```
-#### Solution
+### Solution
 > This took way too long, mostly because I was lazing around the house, and sleeping. But it came to me randomly to try use a JSON approach!  Netlify likes it!, I tried the  naming schemescheme of "moduleName.module.css" for css files in components, however netlify still gave me the error. hence the now I'll use "moduleName.module.js". I probably should change it later
 
  ## TODO General
@@ -117,6 +120,7 @@
  - [Adding Talwind css on next.js documentaiton](https://nextjs.org/docs/app/building-your-application/styling/tailwind-css)
  - [Component tailwind.css with next.js fix](https://www.geeksforgeeks.org/how-to-use-tailwind-apply-in-css-modules-in-next-js/)
  - [next.js get data from a file path](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)
+ - [How to add fonts when are using both tailwind and next.js](https://dev.to/manuelalferez/custom-fonts-in-nextjs-tailwindcss-2iip)
 ### Useful commands
  - local firebase server emulator
  ' firebase emulators:start '
