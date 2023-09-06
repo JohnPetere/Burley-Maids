@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        BrushScript: ['"Alex Brush"'],
+        BrushScript: ['"Brush Script"'],
         SourceCodePro: ['"Source Code Pro"']
       },
       colors: {
