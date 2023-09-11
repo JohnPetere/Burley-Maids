@@ -1,19 +1,20 @@
 
 import Image from 'next/image';
-import leftButton from '../../styles/svg/chevron-left-button.svg'
-import rightButton from '../../styles/svg/chevron-right-button.svg'
 import Link from 'next/link'
-// import JoeLogo from '../../styles/svg/Joe-Logo.svg'
 import { useEffect, useState } from 'react';
 import slideData from './slideData';
-// I am probably going to use getServerSideProps....
-// then use Map??? well see....
+
 let CarasuselMainPage = () => {
-  // let currentSlide;
- let galleryBackgroundClassNames = "h-96 w-full  flex flex-col justify-around"+
- "bg-[url('https://picsum.photos/seed/picsum/200/300"+
- "')]";
+ let setGalleryBckgImg= ()=>{
+  
+  return "h-96 w-full  flex flex-col justify-around"+
+  "bg-[url('"
+  +slideData[currentIndex].imageURL+
+  "')]"
+ }
  const [currentIndex, setCurrentIndex] = useState(0); 
+ const[currentImage, setCurrentImage] = useState(setGalleryBckgImg())
+ 
   let popNavButtons = ()=>{
     let buttons = []
       for(let i = 0; i < slideData.length; i++){
@@ -84,7 +85,7 @@ let CarasuselMainPage = () => {
 
           bg-opacity-50
           bg- w-full h-64 
-          sm:w-full
+         
           sm:w-3/4
           
           sm:text-center
@@ -94,7 +95,7 @@ let CarasuselMainPage = () => {
           lg:w-1/2
           lg:text-left
           lg:text-xl
-          xl:text-2xl
+         
           xl:text-lg
           xl:w-1/2
           2xl:w-1/2

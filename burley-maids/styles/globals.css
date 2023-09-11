@@ -28,3 +28,23 @@ body{
   min-width: 300px;
 
 }
+
+/* GLobal styling framework */
+.main-page-container{
+ @apply h-auto w-screen flex  flex-col items-center overflow-hidden  bg-frenchGray
+ 
+}
+.main-inner-page-responsive{
+  @apply 
+  
+  w-screen
+  sm:w-screen
+  md:w-screen
+  lg:w-4/5
+  xl:w-4/5
+  2xl:w-3/5
+ h-auto flex justify-center
+}
+.main-page-content{
+  @apply w-full flex flex-col
+}
