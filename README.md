@@ -80,10 +80,10 @@
       - <strike> Complete original styling for carasoul </strike>
       - code out functions such as<strike>  nextSlide </strike>,  <strike> prevSlilde </strike>, and goToSlide(slideNum)
       
-      - add navigation button things to the bottom.
-         - the button navigations has values, then it sends to (goToSlide)
-      - Make it self populate with
-      - 
+      - <strike>add navigation button things to the bottom.
+         - the button navigations has values, then it sends to (goToSlide) </strike>
+      - Change images
+      - Make it transition with flashes
 
    
 

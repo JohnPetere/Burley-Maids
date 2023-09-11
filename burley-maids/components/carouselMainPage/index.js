@@ -69,7 +69,7 @@ let CarasuselMainPage = () => {
   popNavButtons();
   return (
     <div id='galleryBackground' className=" h-96 w-full  
-     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around"
+     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around transition-opacity duration-500"
      style={{
       backgroundImage: "url(//"+slideData[currentIndex].imageURL+"`)",
        
