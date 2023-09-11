@@ -49,7 +49,8 @@ let CarasuselMainPage = () => {
   }
   let nextSlide =()=>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
-  
+    
+
   }
 
   useEffect(()=>{
@@ -63,11 +64,16 @@ let CarasuselMainPage = () => {
 //https://i.imgur.com/zhd5Dfj.jpeg
 //https://picsum.photos/seed/picsum/200/300
 //https://picsum.photos/200/300?grayscale
+// backgroundImage: "url(//"+ "i.imgur.com/zhd5Dfj.jpeg"+"`)",
+       
   popNavButtons();
   return (
     <div id='galleryBackground' className=" h-96 w-full  
      flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around"
-     
+     style={{
+      backgroundImage: "url(//"+slideData[currentIndex].imageURL+"`)",
+       
+      }}
      >
       {/* slides here */}
       <div className=" ">
