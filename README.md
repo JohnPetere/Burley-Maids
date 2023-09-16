@@ -55,7 +55,7 @@
  - <strike> Convert into next.js app for SEO </strike>
  - Change meta tags
  - Change Favicon
- - make 80% a custom class for all pages, when it gets to size md, it gets to 100
+ - <strike>make 80% a custom class for all pages, when it gets to size md, it gets to 100</strike>
  - <strike>  NavBar</strike>
     -<strike>  Mobile menu layout and colors</strike>
  - footbar
@@ -65,17 +65,16 @@
     - <strike>Services</strike>
     - Before and Afer
 
- - Remove About Page from design 
+ - <strike>Remove About Page from design </strike>
  - testimonies page
  - Contact Page
- - Create tailwind.css template componenent for react and next.jss
-
- - design home page gallery
  - Add defualt 404 page
 
 ### Index Page
 - <strike> FIX THE FONT LOADING PROBLEM LATER </strike>
- - Home page
+- Create the footer
+- make the nav and the footer highlight what page you're on, except for logo 
+
    - Carasoul
       - <strike> Complete original styling for carasoul </strike>
       - code out functions such as<strike>  nextSlide </strike>,  <strike> prevSlilde </strike>, and goToSlide(slideNum)
@@ -86,28 +85,19 @@
       - Make it transition with flashes
       - Source images locally, not on imgur
          - problem: Having trouble referencing images and setting up url, gave up, it's now sourced on imgur 
-- 
    
 
 ### Testomonials page
- - something
-### Contact us page
- - someting
+ - Design testimoney cards
+ - Add Before and after
+ - make testionnies flex-wrap
 ### Services Page
- - something
-
-## Completed TODO
- - Something
-
-### Index Page
- - Home page
-
-### Testomonials page
- - something
+ - Add individual service card
+ - add buttons for getting a quote 
+ - switch home to the first one 
+ - if they clicked one of the "service" icons on the main page, it will light up or flash the corresponding service card
 ### Contact us page
- - someting
-### Services Page
- - something
+ - Find a form email thing, design  the form after it
 
  ## References
  - [Deploy React into firebase](https://www.example.com)
@@ -127,10 +117,4 @@
  - **[The colors I used, from coolers.co](https://coolors.co/6d2a33-5a7d7c-dadff7-a0c1d1-b5b2c2)**
  - [how to connect images in next/js, place in public, NEXT.js automatically references it when you start a path with '/'](https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l)
  - [background image positioning cheat sheet](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_background-position)
-
-### Useful commands
- - local firebase server emulator
- ' firebase emulators:start '
- -  Deploys changes to firebase server
-' firebase deploy '
 
