@@ -126,6 +126,7 @@
  - [How to add fonts when are using both tailwind and next.js](https://dev.to/manuelalferez/custom-fonts-in-nextjs-tailwindcss-2iip)
  - **[The colors I used, from coolers.co](https://coolors.co/6d2a33-5a7d7c-dadff7-a0c1d1-b5b2c2)**
  - [how to connect images in next/js, place in public, NEXT.js automatically references it when you start a path with '/'](https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l)
+ - [background image positioning cheat sheet](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_background-position)
 
 ### Useful commands
  - local firebase server emulator

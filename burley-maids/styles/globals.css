@@ -15,6 +15,7 @@
   font-weight: 400;
   src: local(''), url('../public/fonts/sourceCodePro/SourceCodePro-Italic-VariableFont_wght.ttf')
 }
+
 html,
 body {
   @apply font-SourceCodePro 
