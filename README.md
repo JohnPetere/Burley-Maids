@@ -61,8 +61,8 @@
  - footbar
  - finish home page
     - <strike> Carasoul</strike>
-    - We Clean you cllean
-    - Services thing
+    - <strike>We Clean you cllean </strike>
+    - <strike>Services</strike>
     - Before and Afer
 
  - Remove About Page from design 

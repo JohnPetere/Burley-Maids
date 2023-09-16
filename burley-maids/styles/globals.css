@@ -21,10 +21,7 @@ body {
   @apply font-SourceCodePro 
 
 }
-html,
-body{
 
-}
 #__next{
   min-width: 300px;
 
@@ -37,8 +34,8 @@ body{
 }
 .main-inner-page-responsive{
   @apply 
-  w-11/12
-  w-screen
+  /* w-11/12
+  w-screen */
   sm:w-screen
   md:w-screen
   lg:w-11/12
@@ -48,4 +45,31 @@ body{
 }
 .main-page-content{
   @apply w-full flex flex-col
+}
+
+/* Individual Componenet styles */
+
+/* Main Page, Services componenet */
+
+.service-box-main-page{
+  @apply
+   hover:contrast-200
+   
+   h-52
+   w-52 
+   flex
+   justify-center
+   bg-lavendarWeb
+   rounded-full
+   mx-2
+ 
+}
+
+
+.service-box-main-page-h3{
+  @apply
+  text-2xl
+  text-center
+  font-bigBold
+  py-5
 }
