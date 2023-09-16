@@ -5,15 +5,9 @@ import { useEffect, useState } from 'react';
 import slideData from './slideData';
 
 let CarasuselMainPage = () => {
- let setGalleryBckgImg= ()=>{
-  
-  return "h-96 w-full  flex flex-col justify-around"+
-  "bg-[url('"
-  +slideData[currentIndex].imageURL+
-  "')]"
- }
+
  const [currentIndex, setCurrentIndex] = useState(0); 
- const[currentImage, setCurrentImage] = useState(setGalleryBckgImg())
+
  
   let popNavButtons = ()=>{
     let buttons = []
@@ -69,13 +63,16 @@ let CarasuselMainPage = () => {
   popNavButtons();
   return (
     <div id='galleryBackground' className=" h-96 w-full  
-     flex flex-col bg-[url('https://picsum.photos/seed/picsum/200/300')] justify-around transition-opacity duration-500"
+     flex flex-col  justify-around transition-opacity duration-500"
      style={{
-      backgroundImage: "url("+slideData[currentIndex].imageURL+"`)",
-
+       //backgroundImage: 'url('+slideData[currentIndex].imageURL+'`)',
+     // backgroundImage: 'url("/images/clean-image-2.jpg")', working one
+     backgroundImage: 'url('+slideData[currentIndex].imageURL+'`)',
+    backgroundPosition: 'center center'
        
       }}
      >
+  
       {/* slides here */}
       <div className=" ">
         {/* Each elemente is a slide */}

@@ -74,7 +74,7 @@
  - Add defualt 404 page
 
 ### Index Page
-- FIX THE FUCKING FONT LOADING PROBLEM LATER
+- <strike> FIX THE FONT LOADING PROBLEM LATER </strike>
  - Home page
    - Carasoul
       - <strike> Complete original styling for carasoul </strike>
@@ -82,9 +82,11 @@
       
       - <strike>add navigation button things to the bottom.
          - the button navigations has values, then it sends to (goToSlide) </strike>
-      - Change images
+      - <strike>Change images </strike>
       - Make it transition with flashes
-
+      - Source images locally, not on imgur
+         - problem: Having trouble referencing images and setting up url, gave up, it's now sourced on imgur 
+- 
    
 
 ### Testomonials page
@@ -122,7 +124,9 @@
  - [Component tailwind.css with next.js fix](https://www.geeksforgeeks.org/how-to-use-tailwind-apply-in-css-modules-in-next-js/)
  - [next.js get data from a file path](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)
  - [How to add fonts when are using both tailwind and next.js](https://dev.to/manuelalferez/custom-fonts-in-nextjs-tailwindcss-2iip)
-  - **[The colors I used, from coolers.co](https://coolors.co/6d2a33-5a7d7c-dadff7-a0c1d1-b5b2c2)**
+ - **[The colors I used, from coolers.co](https://coolors.co/6d2a33-5a7d7c-dadff7-a0c1d1-b5b2c2)**
+ - [how to connect images in next/js, place in public, NEXT.js automatically references it when you start a path with '/'](https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l)
+
 ### Useful commands
  - local firebase server emulator
  ' firebase emulators:start '

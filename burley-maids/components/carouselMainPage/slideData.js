@@ -1,6 +1,6 @@
 let slideData = [
     {
-      imageURL:'//./clean-image-0.jpeg',
+      imageURL:"https://i.imgur.com/hafHqq4.jpeg",
       header1:"Need a cleaning?",
       header2:"WE WILL GIVE YOU 10 BEATINGS",
       buttonText:"Free BEATS",
@@ -9,7 +9,7 @@ let slideData = [
     },
     // this image doesn't work
     {
-      imageURL:"//picsum.photos/seed/picsum/200/300",
+      imageURL:"https://i.imgur.com/olVBGRo.jpeg",
       header1:"WANT A QUOTE",
       header2:"hand ME A ROPE",
       buttonText:"Free Quote",
@@ -18,11 +18,11 @@ let slideData = [
     },
     // THIS one doesn't work either, it's too small
     {
-      imageURL:"//picsum.photos/200/300?grayscale",
+      imageURL:"https://i.imgur.com/B9qnvgv.jpeg",
       header1:"Dirty carpets making steam?",
       header2:"We'll steam for you!",
       buttonText:"More Info",
-      buttonLink:"https://www.sometimesredsometimesblue.com/",
+      buttonLink:"https://i.imgur.com/B9qnvgv.jpeg",
 
     },
   ]
