@@ -36,11 +36,11 @@ body{
 }
 .main-inner-page-responsive{
   @apply 
-  
+  w-11/12
   w-screen
   sm:w-screen
   md:w-screen
-  lg:w-4/5
+  lg:w-11/12
   xl:w-4/5
   2xl:w-4/5
  h-auto flex justify-center
