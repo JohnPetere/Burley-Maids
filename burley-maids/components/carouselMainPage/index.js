@@ -1,5 +1,5 @@
 
-import Image from 'next/image';
+
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import slideData from './slideData';
@@ -7,7 +7,7 @@ import slideData from './slideData';
 let CarasuselMainPage = () => {
 
  const [currentIndex, setCurrentIndex] = useState(0); 
-
+ const [isDarkened, setIsDarkened] = useState(false);
  
   let popNavButtons = ()=>{
     let buttons = []
@@ -17,7 +17,7 @@ let CarasuselMainPage = () => {
         if(i === currentIndex){
           const x = i;
           slideElm =  <div
-          className='w-16  h-4 mx-4 bg-redWine border-2 border-black rounded-lg'
+          className=' w-16  h-4 mx-4 bg-redWine border-2 border-black rounded-lg'
             
           onClick={() => {  goToSlide(i)}}
           >
@@ -25,7 +25,7 @@ let CarasuselMainPage = () => {
           
         }else{
           slideElm =  <div
-          className='w-12 h-4 mx-4 bg-lavendarWeb border-1 border-black rounded-lg'
+          className='hover:bg-redWine w-12 h-4 mx-4 bg-lavendarWeb border-1 border-black rounded-lg'
           onClick={() => {  goToSlide(i)}}
           >
             </div>
@@ -42,13 +42,17 @@ let CarasuselMainPage = () => {
       setCurrentIndex(i);
   }
   let nextSlide =()=>{
+    setIsDarkened(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
     
 
   }
-
   useEffect(()=>{
-   const interval = setInterval(nextSlide,3000); 
+    console.log('the current index is '+ currentIndex)
+  
+  }, [currentIndex]);
+  useEffect(()=>{
+    const interval = setInterval(nextSlide,3000); 
   
    return () => clearInterval(interval);
   }, [currentIndex]);
@@ -62,20 +66,21 @@ let CarasuselMainPage = () => {
        
   popNavButtons();
   return (
-    <div id='galleryBackground' className=" h-96 w-full  
-     flex flex-col  justify-around transition-opacity duration-500"
-     style={{
-       //backgroundImage: 'url('+slideData[currentIndex].imageURL+'`)',
-     // backgroundImage: 'url("/images/clean-image-2.jpg")', working one
-     backgroundImage: 'url('+slideData[currentIndex].imageURL+'`)',
-    backgroundPosition: 'center center'
-       
-      }}
+    <div id='galleryBackground'
+    className={`
+    h-96 w-full  
+    flex flex-col justify-around
+    bg-url('${slideData[currentIndex].imageURL}')
+    ${isDarkened ? 'darken' : ''}
+    transition-opacity duration-500 transition-bg
+   
+  `}
+ 
      >
   
-      {/* slides here */}
+
       <div className=" ">
-        {/* Each elemente is a slide */}
+     
         <div  
         className="
         " >
@@ -122,6 +127,7 @@ let CarasuselMainPage = () => {
              }
             </h2>
             <Link
+            
             className='bg-lavendarWeb 
             rounded-md
             text-3xl
@@ -160,7 +166,6 @@ let CarasuselMainPage = () => {
       items-center
       justify-around
       h-10 
-     
       text-4xl 
       text-redWine
       '>

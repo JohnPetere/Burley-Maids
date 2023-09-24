@@ -26,7 +26,9 @@ body {
   min-width: 300px;
 
 }
-
+a{
+  @apply transition duration-300 ease-in-out
+}
 /* GLobal styling framework */
 .main-page-container{
  @apply h-auto w-screen flex  flex-col items-center overflow-hidden  bg-frenchGray
@@ -49,8 +51,10 @@ body {
 
 /* Individual Componenet styles */
 
-/* Main Page, Services componenet */
-
+  /* Main Page, Services componenet */
+  .transition-bg {
+    transition: background-image 0.5s ease-in-out;
+  }
 .service-box-main-page{
   @apply
    hover:contrast-200
@@ -62,6 +66,7 @@ body {
    bg-lavendarWeb
    rounded-full
    mx-2
+   drop-shadow-2xl
  
 }
 
