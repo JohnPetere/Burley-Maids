@@ -1,5 +1,5 @@
 # Burley Maids
- A website for a start up cleaning business. A friend wanted to start up a cleaning business so I used this as a sort of test of myself to build a website
+ A website for a start up cleaning business. A friend wanted to start up a cleaning business so I used this as a sort of test of myself to build a website. The main objective of this project is to learn next.js, and improve my front end skills. I like doing front end, however, it's not my favourite.
  
  ## Technology used
   - <strike>Firebase for web hosting</strike>
@@ -17,7 +17,7 @@
 ### Problem 
 > I could not piece together how to animate the parts of the carasoul, I couldn't get them to trigger the tailwind.css animation
 ### Solution
-> Delays and css module thing are used to change the opacity manuelly. 
+> Delays and css module thing are used to change the opacity manuelly, with a work around with time-outs. I spent 3 hours trying to find the most optimial timing. There is defineltly a better way of doing this 
 ### PRoblem
 > I spent 3 hours somehow trying to figure out how to load fonts on the website. Or 4. I don't remember
 ### Solution
@@ -97,10 +97,9 @@
  - Add Before and after
  - make testionnies flex-wrap
 ### Services Page
- - Add individual service card
- - add buttons for getting a quote 
- - switch home to the first one 
- - if they clicked one of the "service" icons on the main page, it will light up or flash the corresponding service card
+ - <strike> Add individual service card </strike>
+ - <strike>add buttons for getting a quote to contact page</strike>
+ - if they clicked one of the "service" icons on the main page, it will light up or flash the corresponding form inputs
 ### Contact us page
  - Find a form email thing, design  the form after it
 

@@ -57,9 +57,32 @@ function Services({ children, ...props }) {
                 Our small business carpet cleaning service offers both regular maintenance and one-time deep cleanings, granting you the freedom to select the level of care that suits your carpets best. Allow us to handle the carpet cleaning, allowing you to dedicate your time and energy to the growth of your business. Our service is not only affordable but also remarkably flexible, designed to accommodate the unique requirements of small businesses like yours.
                   </p>
                 <Link className="servuce-card-link-button "
-                 href="/contact ">Get a quote</Link>
+                 href="/contact ">Quote Carpets</Link>
               </div>
             </div>
+ {/* One service card */}
+ <div className="service-card
+                ">
+              <div className="service-card-icon-title">
+                <Link
+                  className="                      
+                  service-card-icon-link"  href="/contact"
+                >
+                  <Image className="" height={123} width={125} src={ResidentialIcon} />
+                </Link>
+                <h3 className="text-4xl text-center text-zaffra  my-6 font-SourceCodePro font-bigBold ">
+                   Home
+                </h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="service-card-p
+                ">Hey there, intergalactic travelers! Tired of returning to a topsy-turvy, interdimensional abode after a day of cosmic adventures? Fear not! Our otherworldly housekeeping service is here to whisk away the space dust and maintain your interstellar sanctuary. Our team of friendly, multidimensional beings will meticulously cleanse every nook and cranny, leaving no cosmic debris behind. From antimatter dusting to quantum vacuuming, and from hyperspace scrubbing to wormhole organization, we've got the tools for the job. Your home will radiate a peculiar yet delightful aura when we're done. What's more, our scheduling is as flexible as a rubber black hole, and our pricing won't rupture your space-time continuum. Reach out to us across the multiverse today and entrust us with your otherworldly housekeeping needs!
+                  </p>
+                <Link className="servuce-card-link-button "
+                 href="/contact ">Clean house</Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
