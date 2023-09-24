@@ -13,32 +13,50 @@ function Services({ children, ...props }) {
           <h2 className="text-8xl font-BrushScript text-center my-6 ">
             Services
           </h2>
-          <div className="flex justify-center  ">
+          <div className="flex items-center flex-col">
             {/* One service card */}
-            <div className="bg-lavendarWeb flex p-4 w-5/6 rounded-[2rem]">
-              <div className="m-4 h-full flex flex-col items-center justify-center">
+            <div className="service-card
+                ">
+              <div className="service-card-icon-title">
                 <Link
-                  className="  h-52
-                            w-52 
-                            flex
-                            justify-center
-                            bg-ghostWhite
-                            rounded-full
-                            mx-2
-                            hover:scale-110
-                            hover:drop-shadow-2xl"
-                  href="/contact"
+                  className="                      
+                  service-card-icon-link"  href="/contact"
                 >
-                  <Image className="" height={75} width={75} src={SmallBiz} />
+                  <Image className="" height={100} width={100} src={SmallBiz} />
                 </Link>
                 <h3 className="text-4xl text-left text-zaffra  my-6 font-SourceCodePro font-bigBold ">
-                  Residential
+                   Business
                 </h3>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-md p-6 text-left text-black my-6 font-SourceCodePro">Are you a small business owner struggling to keep your workspace clean and organized? Look no further than our cleaning company's small business cleaning service. Our team of expert cleaners will work with you to create a customized cleaning plan that meets the specific needs of your business. We use eco-friendly cleaning products and state-of-the-art equipment to ensure a thorough and effective cleaning. Our small business cleaning service can provide regular cleaning and maintenance, as well as one-time deep cleanings. Let us take care of the cleaning so you can focus on growing your business. Our service is affordable and flexible, designed to fit the unique needs of small businesses. A clean and organized workspace not only creates a better environment for your employees, but it also makes a great impression on your clients.
+                <p className="service-card-p
+                ">Are you a small business owner struggling to keep your workspace clean and organized? Look no further than our cleaning company's small business cleaning service. Our team of expert cleaners will work with you to create a customized cleaning plan that meets the specific needs of your business. We use eco-friendly cleaning products and state-of-the-art equipment to ensure a thorough and effective cleaning. Our small business cleaning service can provide regular cleaning and maintenance, as well as one-time deep cleanings. Let us take care of the cleaning so you can focus on growing your business. Our service is affordable and flexible, designed to fit the unique needs of small businesses. 
                   </p>
-                <Link className="text-ghostWhite bg-zaffra p-4 rounded-lg text-center w-5/12 hover:scale-125 text-2xl font-bigBold "
+                <Link className="servuce-card-link-button "
+                 href="/contact ">Get a quote</Link>
+              </div>
+            </div>
+             {/* One service card */}
+             <div className="service-card
+                ">
+              <div className="service-card-icon-title">
+                <Link
+                  className="                      
+                  service-card-icon-link"  href="/contact"
+                >
+                  <Image className="" height={123} width={125} src={CarpetCleaning} />
+                </Link>
+                <h3 className="text-4xl text-center text-zaffra  my-6 font-SourceCodePro font-bigBold ">
+                   Carpet Cleaning
+                </h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="service-card-p
+                ">Are you a business owner struggling to maintain the pristine condition of your carpets? Look no further than our carpet cleaning company's small business carpet cleaning service. Our team of expert carpet cleaners will collaborate with you to craft a tailor-made cleaning plan that addresses the specific needs of your business. We utilize eco-friendly cleaning products and state-of-the-art carpet cleaning equipment to ensure a comprehensive and efficient cleaning process.
+
+                Our small business carpet cleaning service offers both regular maintenance and one-time deep cleanings, granting you the freedom to select the level of care that suits your carpets best. Allow us to handle the carpet cleaning, allowing you to dedicate your time and energy to the growth of your business. Our service is not only affordable but also remarkably flexible, designed to accommodate the unique requirements of small businesses like yours.
+                  </p>
+                <Link className="servuce-card-link-button "
                  href="/contact ">Get a quote</Link>
               </div>
             </div>

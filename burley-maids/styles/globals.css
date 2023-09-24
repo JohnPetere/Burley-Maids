@@ -82,5 +82,44 @@ a{
 }
 /* Services Page */
 .service-card{
+  @apply bg-lavendarWeb flex flex-col mt-10  p-4 w-5/6 rounded-[2rem]
+  sm:flex-col
+  md:flex-col
+  lg:flex-row
+  xl:flex-row
+  2xl:flex-row
+}
+.service-card-icon-title{
+   @apply m-4 h-full flex flex-col items-center
+   sm:m-0 sm:mt-4
+   md:m-0 md:mt-4
+   lg:m-4 lg:mt-7
+   xl:m-4 xl:mt-7
+   2xl:m-4 2xl:mt-7
+}
+.service-card-icon-link{
+  @apply h-52
+  w-52 
+  flex
+  justify-center
+  bg-ghostWhite
+  rounded-full
+  mx-2
+  hover:scale-110
+  hover:drop-shadow-2xl
+  sm:m-0 sm:mt-2
+  md:m-0 md:mt-2
+
   
+}
+.service-card-p{
+  @apply text-left text-black font-SourceCodePro
+  sm:m-0 sm:px-2 sm:mt-0
+  md:m-0 md:px-2 md:my-0
+  lg:p-6 lg:my-6
+  xl:p-6 lg:my-6
+  2xl:p-6 xl:my-6
+}
+.servuce-card-link-button{
+  @apply text-ghostWhite bg-zaffra p-4 rounded-lg text-center w-5/12 hover:scale-125 text-2xl font-bigBold m-4
 }
