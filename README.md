@@ -13,6 +13,11 @@
 
 ## Bugs/difficulties 
 
+
+### Problem 
+> I could not piece together how to animate the parts of the carasoul, I couldn't get them to trigger the tailwind.css animation
+### Solution
+> Delays and css module thing are used to change the opacity manuelly. 
 ### PRoblem
 > I spent 3 hours somehow trying to figure out how to load fonts on the website. Or 4. I don't remember
 ### Solution

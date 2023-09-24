@@ -32,12 +32,16 @@ a{
 /* GLobal styling framework */
 .main-page-container{
  @apply h-auto w-screen flex  flex-col items-center overflow-hidden  bg-frenchGray
+ min-h-screen
  
 }
 .main-inner-page-responsive{
   @apply 
   /* w-11/12
+  
   w-screen */
+  min-h-screen
+  bg-ghostWhite
   sm:w-screen
   md:w-screen
   lg:w-11/12
@@ -75,4 +79,8 @@ a{
   text-center
   font-bigBold
   py-5
+}
+/* Services Page */
+.service-card{
+  
 }
