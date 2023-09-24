@@ -18,7 +18,7 @@
 
 html,
 body {
-  @apply font-SourceCodePro 
+  @apply font-SourceCodePro  bg-ghostWhite
 
 }
 
@@ -52,9 +52,7 @@ a{
 /* Individual Componenet styles */
 
   /* Main Page, Services componenet */
-  .transition-bg {
-    transition: background-image 0.5s ease-in-out;
-  }
+
 .service-box-main-page{
   @apply
    hover:contrast-200

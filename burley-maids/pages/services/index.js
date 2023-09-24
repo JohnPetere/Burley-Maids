@@ -1,8 +1,13 @@
 function Services({ children, ...props }) {
   return (
-    <div className>
+    <div className="main-page-container">
       {children}
-      <h2>Serivce Component</h2>
+      <main className="inner-page-container">
+      <h2
+      className="text-8xl my-8 font-" 
+      >Services</h2>
+
+      </main>
     </div>
   );
 }
