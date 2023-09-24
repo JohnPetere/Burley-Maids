@@ -37,10 +37,13 @@ let CarasuselMainPage = () => {
   };
   let changeNavButton = () => { };
   let goToSlide = (i) => {
-    console.log("YOU Clicked on button nav # " + i);
-    setTimeout(() => { setIsDarkened(!isDarkened); }, 200);
-    setTimeout(() => { setCurrentIndex(i); }, 400);
-    // setCurrentIndex(i);
+    setIsDarkened(true);
+    // console.log("YOU Clicked on button nav # " + i);
+    setTimeout((()=>{setCurrentIndex(i)}), 50);
+    setTimeout(() => { setIsDarkened(false);; }, 100);
+
+
+    
   };
   let nextSlide = () => {
 
@@ -48,20 +51,16 @@ let CarasuselMainPage = () => {
     // set opacity to 0
     // then change backround image index, after a delay of 200 ms
     // then set opacity to 1, after a delay of 200 ms
-
-    const delay = t => new Promise(resolve => setTimeout(resolve, t));
     
-    setIsDarkened(!isDarkened);
-    // setTimeout(() => { setIsDarkened(!isDarkened); }, 200);
-    setTimeout(() => { setIsDarkened(!isDarkened); }, 200);
-   setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slideData.length)
+
+    // delay(200).then(() => setIsDarkened(!isDarkened));
   
 };
   let check = isDarkened ? 0 : 1;
   useEffect(() => {
     const interval = setInterval(nextSlide, 3000);
    
-    console.log('isDakrned is '+ check);
     
 
     return () => clearInterval(interval);
@@ -76,7 +75,7 @@ let CarasuselMainPage = () => {
         backgroundPosition: "center center",
         filter: "brightness( +"+check+")",
       }}
-      className="h-96 w-full flex flex-col  justify-around duration-300 "
+      className="h-96 w-full flex flex-col  justify-around duration-150 "
     >
       {/* slides here */}
       <div className=" ">
