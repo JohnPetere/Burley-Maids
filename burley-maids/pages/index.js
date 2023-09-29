@@ -4,6 +4,7 @@ import CarasuselMainPage from "../components/mainPage/carouselMainPage"
 import WeCleanYouClean from "../components/mainPage/weCleanYouClean"
 import Services from "../components/mainPage/Services"
 import BeforeAndAfter from "../components/mainPage/beforeAndAfter"
+import FooterBar from "../components/footerBar"
 export default function Home() {
   return (
     <div className="main-page-container">
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
 
       </div>
-
+      <FooterBar/>
     </div>
   )
 }
