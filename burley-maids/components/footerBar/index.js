@@ -5,11 +5,28 @@ let Servicess = () => {
             className=" flex 
         flex-col w-screen  
         bg-lavendarWeb
+        
+        sm:px-10
+
+        md:px-10
+
+        lg:px-40
+        xl:px-40
+        2xl:px-40
         "
         >
-            <nav className="flex flex-row justify-evenly">
+            <nav className="flex mt-3
+     
+
+            flex-wrap
+            pl-10
+            pb-4
+             ">
                 <div
-                    className="flex flex-col">
+                    className="flex flex-col
+               
+                    
+                    ">
                     <h2>Services</h2>
                     <div
                         className="flex mx-4  ">
@@ -64,7 +81,15 @@ let Servicess = () => {
                     </div>
                 </div>
             </nav>
-            <h1>C 2023 - Burley Maids</h1>
+            <h1
+            className=" p-4
+            border-solid
+            border-black
+            border-t-2
+            pl-3
+            mx-3
+            "
+            >C 2023 - Burley Maids: Dedicated to Joe Ladan</h1>
         </footer>
     );
 };
