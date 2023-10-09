@@ -1,4 +1,4 @@
-const testimonyData = [
+let testimonyData = [
     {
       desc:"I've tried several cleaning services in the past, but none of them come close to the level of service and quality provided by Burley Maids. They always go above and beyond to make sure every nook and cranny of my home is spotless. I can't recommend them enough!" ,
       author: "Jimmy Timmy",

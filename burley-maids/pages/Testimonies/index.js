@@ -1,4 +1,4 @@
-import testimonyData from "./testimoneyData";
+import testimonyData from "../../components/testimoneyData";
 import Footer from '../../components/footerBar'
 function Testimonies({ children, ...props }) {
   return (
