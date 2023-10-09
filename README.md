@@ -63,7 +63,7 @@
  - <strike>make 80% a custom class for all pages, when it gets to size md, it gets to 100</strike>
  - <strike>  NavBar</strike>
     -<strike>  Mobile menu layout and colors</strike>
- - footbar
+ - <strike>footbar</strike>
  - finish home page
     - <strike> Carasoul</strike>
     - <strike>We Clean you cllean </strike>
