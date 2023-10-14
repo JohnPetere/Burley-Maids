@@ -4,6 +4,7 @@ import Image from "next/image";
 import SmallBiz from "../../styles/svg/building-solid-icon.svg";
 import CarpetCleaning from "../../styles/svg/carpet-icon.svg";
 import ResidentialIcon from "../../styles/svg/house-solid-icon.svg";
+import FooterBar from "../../components/footerBar"
 function Services({ children, ...props }) {
   return (
     <div className="main-page-container bg-ghostWhite">
@@ -86,6 +87,7 @@ function Services({ children, ...props }) {
           </div>
         </div>
       </main>
+      <FooterBar/>
     </div>
   );
 }

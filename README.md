@@ -13,6 +13,52 @@
 
 ## Bugs/difficulties 
 
+### Problem 
+> The custom 404 page has an error as follows. Was working, but I changed it the main element in the not-found.js folder. Was initially loading, but after tryiing to style I got a Server error. I'm goonna try and finish the form stuff first :D
+
+`
+Server Error
+
+Error: Cannot find module 'C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\.next\server\app\not-found_client-reference-manifest.js'
+Require stack:
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\load-components.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\build\utils.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\lib\router-utils\setup-dev.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\John\Documents\GitHub\Burley-Maids\burley-maids\node_modules\next\dist\server\lib\start-server.js
+This error happened while generating the page. Any console logs will be displayed in the terminal window.
+Call Stack
+Module._resolveFilename
+node:internal/modules/cjs/loader (1077:15)
+<unknown>
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/require-hook.js (54:36)
+Module._load
+node:internal/modules/cjs/loader (922:27)
+Module.require
+node:internal/modules/cjs/loader (1143:19)
+mod.require
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/require-hook.js (64:28)
+require
+node:internal/modules/cjs/helpers (121:18)
+loadClientReferenceManifest
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/load-components.js (43:72)
+loadComponentsImpl
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/load-components.js (65:29)
+async DevServer.findPageComponentsImpl
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/next-server.js (438:36)
+async DevServer.findPageComponents
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/dev/next-dev-server.js (545:20)
+async DevServer.renderErrorToResponseImpl
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/base-server.js (1762:30)
+async pipe.req.req
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/base-server.js (1728:30)
+async DevServer.pipeImpl
+file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/base-server.js (825:25)
+
+`
+
 
 ### Problem 
 > I could not piece together how to animate the parts of the carasoul, I couldn't get them to trigger the tailwind.css animation
@@ -71,7 +117,7 @@
     - Before and Afer
 
  - <strike>Remove About Page from design </strike>
- - testimonies page
+ - <strike>testimonies page </strike>
  - Contact Page
  - Add defualt 404 page
 
@@ -121,4 +167,4 @@
  - **[The colors I used, from coolers.co](https://coolors.co/6d2a33-5a7d7c-dadff7-a0c1d1-b5b2c2)**
  - [how to connect images in next/js, place in public, NEXT.js automatically references it when you start a path with '/'](https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l)
  - [background image positioning cheat sheet](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_background-position)
-
+ - [ not found page ](https://nextjs.org/docs/app/api-reference/file-conventions/not-found)
