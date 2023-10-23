@@ -1,33 +1,46 @@
-// Enviromental stuff for next.js
-//https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables
-
-
-// React contact form docs web3forms
-//https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/simple-react-contact-form
-function Contact({ children, ...props }) {
-  return (
-    <div className>
-      {children}
-      <h3>Get a Quote!</h3>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input
-          type="hidden"
-          name="access_key"
-          value="WEB3_FORMS_API_KEY"
-        />
-
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <textarea name="message" required></textarea>
-        <input
-          type="hidden"
-          name="redirect"
-          value="https://web3forms.com/success"
-        />
-        <button type="submit">Submit Form</button>
-      </form>
-    </div>
-  );
+import React from "react";
+import Footer from '../../components/footerBar'
+export async function getStaticProps() {
+  const apiKey = process.env.REACT_APP_API_KEY
+  console.log("API KEY!!!: " +apiKey)
+  return { props: {apiKey:apiKey}  }
 }
+export default function Contact({ children, ...props }) {
+  
+  async function handleSubmit(event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      
+  
+      formData.append("access_key", props.apiKey);
 
-export default Contact;
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+      });
+      const result = await response.json();
+      if (result.success) {
+          console.log(result);
+      }
+  }
+
+return (
+  <>
+    {children}
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="name"/>
+      <input type="email" name="email"/>
+      <textarea name="message"></textarea>
+      <button type="submit">Submit Form</button>
+    </form>
+    <Footer/>
+  </>
+);
+}

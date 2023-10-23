@@ -10,6 +10,7 @@
   - Next.js for static serverside rendering and SEO
   - Find something to host form shit
   - Figma for the design
+  - Web3Forms API: used for simply sending a form
 
 ## Bugs/difficulties 
 
