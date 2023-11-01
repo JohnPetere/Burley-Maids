@@ -115,25 +115,20 @@ const Navbar = () => {
               href="/"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
-              Home
+              Services
             </Link>
-            <Link
-              href="/about"
-              className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
-            >
-              About
-            </Link>
+         
             <Link
               href="/services"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
-              Services
+              Testimonies
             </Link>
             <Link
               href="/contact"
               className=" hover:bg-frenchGray hover:text-redWine block px-3 py-2 rounded-md text-base font-medium"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>

@@ -5,6 +5,10 @@ export async function getStaticProps() {
 
   return { props: { apiKey: apiKey } };
 }
+/**
+ * Add sweet Alert for failure/sucess of submission
+ * 
+ */
 export default function Contact({ children, ...props }) {
   async function handleSubmit(event) {
     event.preventDefault();
@@ -136,16 +140,25 @@ export default function Contact({ children, ...props }) {
                 <input required name="phone" type="text"></input>
               </div>
             </div>
-            <div>
+            <div
+            className="flex flex-col mt-2"
+            >
               <label>Tell us more</label>
               <textarea
+              className="m-5"
                 pattern="[^;]+"
                 name="More Info"
                 cols="40"
                 rows="5"
               ></textarea>
             </div>
-            <button type="submit">Submit Form</button>
+            <div
+            className="w-full flex justify-end">
+            <button 
+            
+            type="submit" className="form-submit">Submit Form</button>
+
+            </div>
           </form>
         </div>
       </div>

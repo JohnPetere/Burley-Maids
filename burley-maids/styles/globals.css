@@ -128,22 +128,34 @@ a{
   @apply flex flex-col w-1/2 p-5
 }
 .form-field label{
-  @apply flex
+  @apply flex 
 }
 
 .form-field input {
-  @apply flex h-12 rounded-lg px-4
+  @apply flex h-12 rounded-lg px-4 
+  focus:ring-red-600 disabled:ring-0
 }
 .double-form-field{
-  @apply flex justify-evenly
+  @apply flex justify-evenly my-2 
 }
 .form-checks-groups{
-  @apply flex justify-evenly 
+  @apply flex justify-evenly my-2
 }
 .form-checks-groups input{
-  @apply scale-150 mx-7
+  @apply scale-150 mx-7 my-3
 }
 .form-check-group{
   @apply flex
 }
 
+.form-submit{
+  @apply
+  /* flex justify-end */
+  px-10 py-4 rounded-4xl
+  transition duration-300 ease-in-out 
+   hover:scale-125
+  drop-shadow text-ghostWhite
+  flex justify-end
+   text-3xl font-BrushScript bg-zaffra hover:bg-ghostWhite hover:text-zaffra   
+   text-center
+}

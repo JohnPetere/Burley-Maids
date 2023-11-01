@@ -12,6 +12,8 @@
   - Figma for the design
   - Web3Forms API: used for simply sending a form
 
+## Packages
+ - [SweetAlert](https://www.npmjs.com/package/sweetalert2)
 ## Bugs/difficulties 
 
 ### Problem 
@@ -169,3 +171,4 @@ file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next
  - [how to connect images in next/js, place in public, NEXT.js automatically references it when you start a path with '/'](https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l)
  - [background image positioning cheat sheet](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_background-position)
  - [ not found page ](https://nextjs.org/docs/app/api-reference/file-conventions/not-found)
+ - [Enlarging the size of a checkbox in css](https://stackoverflow.com/questions/306924/can-i-change-the-checkbox-size-using-css)
