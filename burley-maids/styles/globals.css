@@ -123,3 +123,27 @@ a{
 .servuce-card-link-button{
   @apply text-ghostWhite bg-zaffra p-4 rounded-lg text-center w-5/12 hover:scale-125 text-2xl font-bigBold m-4
 }
+
+.form-field{
+  @apply flex flex-col w-1/2 p-5
+}
+.form-field label{
+  @apply flex
+}
+
+.form-field input {
+  @apply flex h-12 rounded-lg px-4
+}
+.double-form-field{
+  @apply flex justify-evenly
+}
+.form-checks-groups{
+  @apply flex justify-evenly 
+}
+.form-checks-groups input{
+  @apply scale-150 mx-7
+}
+.form-check-group{
+  @apply flex
+}
+
