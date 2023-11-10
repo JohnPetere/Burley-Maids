@@ -16,21 +16,21 @@ let Servicess = () => {
       justify-evenly"
       >
         <div>
-          <Link className="service-box-main-page" href="/Services">
+          <Link className="service-box-main-page" href="/services">
             <Image className="" height={75} width={75} src={SmallBiz} />
           </Link>
           <h3 className="service-box-main-page-h3">Residential</h3>
         </div>
 
         <div>
-          <Link className="service-box-main-page" href="/Services">
+          <Link className="service-box-main-page" href="/services">
             <Image className="" height={125} width={125} src={CarpetCleaning} />
           </Link>
           <h3 className="service-box-main-page-h3">Carpet Cleaning</h3>
         </div>
 
         <div>
-          <Link className="service-box-main-page" href="/Services">
+          <Link className="service-box-main-page" href="/services">
             <Image height={125} width={125} src={ResidentialIcon} />
           </Link>
           <h3 className="service-box-main-page-h3">Small Business</h3>

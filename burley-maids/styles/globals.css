@@ -126,6 +126,12 @@ a{
 
 .form-field{
   @apply flex flex-col w-1/2 p-5
+  sm:justify-center sm:flex-col mb-3
+  sm:w-full
+  md:w-1/2 
+  lg:w-1/2 
+  xl:w-1/2 
+  2xl:w-1/2
 }
 .form-field label{
   @apply flex 
@@ -134,15 +140,33 @@ a{
 .form-field input {
   @apply flex h-12 rounded-lg px-4 
   focus:ring-red-600 disabled:ring-0
+  text-center
+  duration-300
+  hover:scale-125
+  focus-within:scale-125
+ 
 }
 .double-form-field{
-  @apply flex justify-evenly my-2 
+  @apply flex  flex-row my-2 flex-row justify-between
+
+  sm:justify-center sm:flex-col
+  md:w-full md:flex-row
+  lg:w-full lg:flex-row
+  xl:w-full xl:flex-row
+  2xl:w-full 2xl:flex-row
+
+  
 }
 .form-checks-groups{
   @apply flex justify-evenly my-2
 }
 .form-checks-groups input{
-  @apply scale-150 mx-7 my-3
+  @apply scale-150 mx-2 my-3
+  sm:mx-1
+  md:mx-7 
+  lg:mx-7 
+  xl:mx-7 
+  2xl:mx-7 
 }
 .form-check-group{
   @apply flex

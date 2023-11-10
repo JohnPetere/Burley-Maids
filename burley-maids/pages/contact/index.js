@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../components/footerBar";
+// import Swal from 'sweetalert2'
 export async function getStaticProps() {
   const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -37,19 +38,26 @@ export default function Contact({ children, ...props }) {
     <>
       {children}
       <div className="main-page-container ">
-        <div className="main-inner-page-responsive flex flex-col">
+        <div className="main-inner-page-responsive flex flex-col pb-20">
           <h1 className="text-7xl font-bigBold text-center py-24">
             Get a Quote!
           </h1>
           <form
-            className=" font-bold  text-2xl bg-lavendarWeb flex flex-col justify-center mx-40
-         p-9 rounded-4xl"
+            className=" font-bold  text-2xl bg-lavendarWeb flex flex-col justify-center 
+         p-9 rounded-4xl m-0 w-auto
+         sm:m-0 sm:w-screen
+         md:m-0 md:w-auto
+         lg:mx-40 lg:w-auto
+         xl:mx-40 xl:w-auto
+         2xl:mx-40 2xl:w-auto
+         
+         "
             onSubmit={handleSubmit}
           >
             <h2 className=" font-bigBold text-4xl">
               Just some quick details...
             </h2>
-            <div className="flex justify-evenly">
+            <div className="double-form-field">
               <div className="form-field">
                 <label>Rooms?</label>
                 <input
@@ -145,7 +153,10 @@ export default function Contact({ children, ...props }) {
             >
               <label>Tell us more</label>
               <textarea
-              className="m-5"
+              className="m-5
+              duration-300
+              hover:scale-125
+              focus-within:scale-125"
                 pattern="[^;]+"
                 name="More Info"
                 cols="40"
