@@ -16,6 +16,9 @@
  - [SweetAlert](https://www.npmjs.com/package/sweetalert2)
 ## Bugs/difficulties 
 
+### Problem
+> Burley-maids logo doesn't load clearly every time, probably because the svg is too complex, I could probably change it to a png instead
+
 ### Problem 
 > The custom 404 page has an error as follows. Was working, but I changed it the main element in the not-found.js folder. Was initially loading, but after tryiing to style I got a Server error. I'm goonna try and finish the form stuff first :D
 
@@ -61,8 +64,8 @@ async DevServer.pipeImpl
 file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next/dist/server/base-server.js (825:25)
 
 `
-
-
+### Solution
+> Not sure what happened to fix it
 ### Problem 
 > I could not piece together how to animate the parts of the carasoul, I couldn't get them to trigger the tailwind.css animation
 ### Solution

@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "../../components/footerBar";
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
+import { useRouter } from "next/navigation";
+
 export async function getStaticProps() {
   const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -30,7 +32,14 @@ export default function Contact({ children, ...props }) {
     });
     const result = await response.json();
     if (result.success) {
-      console.log(result);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Thank you! We will be in touch!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      document.getElementById("Quoteform").reset();
     }
   }
 
@@ -42,7 +51,7 @@ export default function Contact({ children, ...props }) {
           <h1 className="text-7xl font-bigBold text-center py-24">
             Get a Quote!
           </h1>
-          <form
+          <form id="Quoteform"
             className=" font-bold  text-2xl bg-lavendarWeb flex flex-col justify-center 
          p-9 rounded-4xl m-0 w-auto
          sm:m-0 sm:w-screen
