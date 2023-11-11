@@ -1,6 +1,7 @@
 # Burley Maids
  A website for a start up cleaning business. A friend wanted to start up a cleaning business so I used this as a sort of test of myself to build a website. The main objective of this project is to learn next.js, and improve my front end skills. I like doing front end, however, it's not my favourite.
- 
+ ""
+ Check out "Burley Maid Figma Design files.fig" for my figma files in this repository
  ## Technology used
   - <strike>Firebase for web hosting</strike>
   - Netlify for website hosting. Firebase was not working with firebase, after mutliple project rebuilds and deploy attempts
@@ -124,22 +125,21 @@ file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next
 
  - <strike>Remove About Page from design </strike>
  - <strike>testimonies page </strike>
- - Contact Page
- - Add defualt 404 page
+ -  <strike> Contact Page </strike>
+ - *** Add defualt 404 page ***
 
 ### Index Page
 - <strike> FIX THE FONT LOADING PROBLEM LATER </strike>
-- Create the footer
-- make the nav and the footer highlight what page you're on, except for logo 
+- <strike>Create the footer </strike>
 
    - Carasoul
       - <strike> Complete original styling for carasoul </strike>
-      - code out functions such as<strike>  nextSlide </strike>,  <strike> prevSlilde </strike>, and goToSlide(slideNum)
+      - <strike>  code out functions such as nextSlide </strike>,  <strike> prevSlilde , and goToSlide(slideNum)</strike>
       
       - <strike>add navigation button things to the bottom.
          - the button navigations has values, then it sends to (goToSlide) </strike>
       - <strike>Change images </strike>
-      - Make it transition with flashes
+      - <strike> Make it transition with flashes </strike>
       - Source images locally, not on imgur
          - problem: Having trouble referencing images and setting up url, gave up, it's now sourced on imgur 
    
@@ -153,7 +153,7 @@ file:/C:/Users/John/Documents/GitHub/Burley-Maids/burley-maids/node_modules/next
  - <strike>add buttons for getting a quote to contact page</strike>
  - if they clicked one of the "service" icons on the main page, it will light up or flash the corresponding form inputs
 ### Contact us page
- - Find a form email thing, design  the form after it
+ - <strike>Find a form email thing, design  the form after it </strike>
 
  ## References
  - [Deploy React into firebase](https://www.example.com)
